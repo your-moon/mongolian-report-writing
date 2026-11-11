@@ -91,10 +91,10 @@ its physical sense" needs judgment at every term; "don't translate it" needs non
 while this file was loaded — the table is consulted *while writing*, which is exactly
 when it is not consulted. Two things that run without depending on that:
 
-- `./bolor.py <үг>` — bolor-toli.com lookup. Prints what the Mongolian word actually
+- `python3 ~/.claude/skills/mongolian-report-writing/bolor.py <үг>` — bolor-toli.com lookup. Prints what the Mongolian word actually
   means, with its domain tag. This is the fact the rule needs and does not have. Run it
   on any word you are about to use for a technical sense.
-- `./bolor.py --scan <file>` — greps the measured blocklist over a finished draft. It
+- `python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan <file>` — greps the measured blocklist over a finished draft. It
   needs no judgment and it goes red on the real fix-note text.
 
 **Retraction, from running the lookup:** an earlier draft of this section claimed **дүрс**
