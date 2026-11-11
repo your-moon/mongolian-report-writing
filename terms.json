@@ -84,11 +84,11 @@
   },
   "official": {
    "group": "native",
-   "write": "бэлтгэх"
+   "write": "хувилбар"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Dictionary gives only construction senses (барих = erect a building); no comp. tag, no real software usage found. Keep build in Latin.",
+  "note": "бэлтгэх was too vague; dropped. The thing built: хувилбар (шинэ хувилбар). To build or compile: хөрвүүлэх (bolor-toli comp. sense).",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -97,6 +97,10 @@
    {
     "source": "bolor-toli",
     "quote": "build -> барилга байгууламж (бар.)"
+   },
+   {
+    "source": "bolor-toli",
+    "quote": "хөрвүүлэх -> compile (comp.)"
    }
   ]
  },
@@ -381,14 +385,14 @@
    "write": "log"
   },
   "official": {
-   "group": "native",
-   "write": "бүртгэл"
+   "group": "loan",
+   "write": "системийн лог"
   },
   "avoid": [
    "гуалин"
   ],
   "status": "unsure",
-  "note": "Dictionary gives timber senses first; протокол (comp.) and бүртгэх exist. Official бүртгэл unverified for system logs. Never use гуалин.",
+  "note": "Bare бүртгэл collides with account (хэрэглэгчийн бүртгэл), the самбар problem from WORDS.md 2c. Write системийн лог, and for an audit trail үйлдлийн бүртгэл; never bare бүртгэл for a log. лог is not in bolor-toli.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -472,11 +476,11 @@
   },
   "official": {
    "group": "native",
-   "write": "онцлог"
+   "write": "боломж"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "онцлог = characteristic; боломж is common for product features but not verified. No software-feature quote found.",
+  "note": "онцлог means a characteristic; dropped. A new capability for customers: шинэ боломж. Mobicom also writes функц for a named product feature.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -485,6 +489,10 @@
    {
     "source": "bolor-toli",
     "quote": "feature -> онцлог чанар"
+   },
+   {
+    "url": "https://www.mobicom.mn/",
+    "quote": "mobiAI, Xplore функц нэвтэрлээ"
    }
   ]
  },
@@ -809,7 +817,7 @@
   "en": "account",
   "dev": {
    "group": "native",
-   "write": "бүртгэл"
+   "write": "хэрэглэгчийн бүртгэл"
   },
   "official": {
    "group": "native",
@@ -817,7 +825,7 @@
   },
   "avoid": [],
   "status": "unsure",
-  "note": "данс is a money account on every bank page; a login account is бүртгэл (dictionary comp. tag only, no usage seen)",
+  "note": "данс is a money account. A login account is хэрэглэгчийн бүртгэл, always with хэрэглэгчийн so it never collides with a log.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1081,15 +1089,15 @@
   "en": "cloud",
   "dev": {
    "group": "native",
-   "write": "үүлэн"
+   "write": "үүлэн технологи"
   },
   "official": {
    "group": "native",
-   "write": "үүлэн"
+   "write": "үүлэн технологи"
   },
   "avoid": [],
   "status": "confirmed",
-  "note": "Write as an adjective: үүлэн технологи, үүлэн тооцоолол. Latin 'cloud' also appears in Wikipedia prose. Dictionary has no comp. tag for үүл.",
+  "note": "үүлэн is an adjective; always write it with its noun: үүлэн технологи, үүлэн үйлчилгээ.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1102,6 +1110,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Үүлэн_тооцоолол",
     "quote": "Үүлэн тооцоолол — Википедиа нэвтэрхий толь"
+   },
+   {
+    "url": "https://www.mobicom.mn/",
+    "quote": "“Amazon Web Services”-ийн үүлэн технологид шууд холбогдох боломжийг"
+   },
+   {
+    "url": "https://gogo.mn/r/6884qy",
+    "quote": "үүлэн технологид суурилсан үйлчилгээг анх нэвтрүүлсэн юм"
    }
   ]
  },
@@ -1213,13 +1229,13 @@
   },
   "official": {
    "group": "native",
-   "write": "эвдрэх"
+   "write": "ажиллахаа зогсох"
   },
   "avoid": [
    "аваар осол"
   ],
   "status": "unsure",
-  "note": "Dictionary has эвдрэх (comp.), but crash also means vehicle accident and bankruptcy. No real usage found; a descriptive form (ажиллахаа зогсох) may be safer.",
+  "note": "эвдрэх reads as physical breakage; dropped. A crash is ажиллахаа зогссон. A hang or freeze is гацах (bolor-toli: become jammed, stick). An outage is саатал.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1232,6 +1248,10 @@
    {
     "source": "bolor-toli",
     "quote": "crash -> дампуурал"
+   },
+   {
+    "source": "bolor-toli",
+    "quote": "гацах -> become jammed, stick"
    }
   ]
  },
@@ -1334,11 +1354,11 @@
   },
   "official": {
    "group": "native",
-   "write": "суулт"
+   "write": "нэвтрэлт"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Reverse lookup: суулт = session (comp. noun). No real usage; in a dev note keep Latin.",
+  "note": "суулт means a sitting; dropped. Login session: нэвтрэлт (нэвтрэлтийн хугацаа дууссан). сесс is not in bolor-toli. No usage seen; reviewer's call.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1386,11 +1406,11 @@
   },
   "official": {
    "group": "native",
-   "write": "үүрэг"
+   "write": "эрхийн түвшин"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Dictionary: үүрэг, роль, дүр (theatre role). No real usage in a software sense.",
+  "note": "үүрэг means a duty; dropped. For access control: эрхийн түвшин. bolor-toli: эрх -> right, privilege.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1403,6 +1423,10 @@
    {
     "source": "bolor-toli",
     "quote": "role -> дүр"
+   },
+   {
+    "source": "bolor-toli",
+    "quote": "эрх -> right, privilege"
    }
   ]
  },
@@ -1584,11 +1608,11 @@
   },
   "official": {
    "group": "native",
-   "write": "тохиолдол"
+   "write": "саатал"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Dictionary: хэрэг явдал, тохиолдол, үйл явдал. No real IT-incident usage found; 'хэрэг явдал' carries a crime-report tone.",
+  "note": "тохиолдол means an occurrence or case; dropped. A service incident is саатал (bolor-toli tech.: failure). A security incident is аюулгүй байдлын зөрчил (зөрчил = breach).",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1597,6 +1621,14 @@
    {
     "source": "bolor-toli",
     "quote": "incident -> хэрэг явдал"
+   },
+   {
+    "source": "bolor-toli",
+    "quote": "саатал -> failure (tech.)"
+   },
+   {
+    "source": "bolor-toli",
+    "quote": "зөрчил -> violation, breach"
    }
   ]
  }
