@@ -10,6 +10,8 @@ Usage:
     bolor.py production            # en -> mn: which words are on offer?
     bolor.py --scan draft.md       # check a finished draft; exit 1 on any ERROR
     bolor.py --scan draft.md --allow=хаалга   # a real door: skip one term or check name
+    bolor.py --scan letter.md --setting=official   # official letter/report (default: dev note)
+    bolor.py --term deploy         # how Mongolian text renders it, with evidence
     bolor.py -d 8 үйлдвэрлэл       # другое направление (8=ru, 3=de, 5=jp, 7=cn, 4=kr)
 
 Endpoint is undocumented and same-origin to the site. Keep the volume at human pace —
@@ -66,6 +68,40 @@ EVIDENTIAL = r"(?<!\w)\w+?(жээ|чээ)(?!\w)"
 NOT_EVIDENTIAL = ("хэмжээ",)           # WORDS.md §5: арга хэмжээ is a noun
 ATTRIBUTION = r"гэж|гэв|гэсэн|мэдээл|мэдэгд|дагуу|дүгнэлт|эх сурвалж"
 
+TERMS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "terms.json")
+SETTINGS = ("dev", "official")
+
+
+def load_terms(path: str = TERMS_FILE) -> list:
+    """terms.json: how Mongolian technical writing actually renders each English term."""
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+
+
+def term_findings(i: int, line: str, setting: str, terms: list) -> list:
+    out, low = [], line.lower()
+    has_cyrillic = re.search(r"[а-яөүё]", low)
+    prose = re.sub(r"`[^`]*`", " ", low)          # `code` is never prose
+    for e in terms:
+        want = e[setting]
+        level = "ERROR" if e.get("status") == "confirmed" else "WARN"
+        for bad in e.get("avoid") or []:
+            if bad and re.search(rf"(?<!\w){re.escape(bad.lower())}", low):
+                out.append((i, level, "term", bad,
+                            f"{e['en']}: write {want['write']} ({setting})"))
+        if want["group"] == "english" or not has_cyrillic:
+            continue
+        for en in e["en"].split("/"):
+            m = re.search(rf"(?<![a-z]){re.escape(en.strip())}(?![a-z])", prose)
+            if m:
+                out.append((i, "WARN", "term", m.group(),
+                            f"Mongolian {setting} text writes {want['write']} ({want['group']})"))
+                break
+    return out
+
+
 QUOTED = r'"[^"]*"|“[^”]*”|„[^“”]*[“”]|«[^»]*»'
 
 
@@ -73,11 +109,13 @@ def strip_quotes(line: str) -> str:
     return re.sub(QUOTED, lambda m: " " * len(m.group()), line)
 
 
-def scan_text(text: str, allow=()) -> list:
+def scan_text(text: str, allow=(), setting: str = "dev", terms=None) -> list:
     """Return findings as (line, level, check, term, why). level is ERROR or WARN."""
     out = []
     lines = text.splitlines()
+    terms = load_terms() if terms is None else terms
     for i, line in enumerate(lines, 1):
+        out += term_findings(i, line, setting, terms)
         low = line.lower()
         bare = strip_quotes(low)
         for rx, term, why in CALQUES:
@@ -203,8 +241,8 @@ def report(word: str, direction: int) -> int:
     return 0
 
 
-def scan(path: str, allow=()) -> int:
-    findings = scan_text(open(path, encoding="utf-8").read(), allow)
+def scan(path: str, allow=(), setting: str = "dev") -> int:
+    findings = scan_text(open(path, encoding="utf-8").read(), allow, setting)
     for line, level, check, term, why in findings:
         print(f"{path}:{line}: {level} [{check}] {term} — {why}")
     errors = sum(1 for f in findings if f[1] == "ERROR")
@@ -215,6 +253,25 @@ def scan(path: str, allow=()) -> int:
     return 1 if errors else 0
 
 
+def show_term(word: str) -> int:
+    w = word.lower().strip()
+    for e in load_terms():
+        names = [n.strip() for n in e["en"].split("/")]
+        if w in names or w in (e["dev"]["write"].lower(), e["official"]["write"].lower()):
+            print(f"{e['en']}  [{e['status']}]")
+            for s in SETTINGS:
+                print(f"  {s:<9}{e[s]['write']}  ({e[s]['group']})")
+            if e.get("avoid"):
+                print(f"  avoid    {', '.join(e['avoid'])}")
+            if e.get("note"):
+                print(f"  note     {e['note']}")
+            for ev in e.get("evidence") or []:
+                print(f"  - {ev.get('url') or ev.get('source', '')}: {ev.get('quote', '')}")
+            return 0
+    print(f"{word}: not in terms.json. Look it up (bolor.py {word}) and check real usage.")
+    return 1
+
+
 def main() -> int:
     args = sys.argv[1:]
     if not args:
@@ -222,7 +279,13 @@ def main() -> int:
         return 2
     if args[0] == "--scan":
         allow = [a.split("=", 1)[1] for a in args[2:] if a.startswith("--allow=")]
-        return scan(args[1], allow)
+        setting = next((a.split("=", 1)[1] for a in args[2:] if a.startswith("--setting=")), "dev")
+        if setting not in SETTINGS:
+            print(f"--setting must be one of {', '.join(SETTINGS)}")
+            return 2
+        return scan(args[1], allow, setting)
+    if args[0] == "--term":
+        return show_term(" ".join(args[1:]))
     direction = 1
     if args[0] in ("-d", "--direction"):
         direction, args = int(args[1]), args[2:]

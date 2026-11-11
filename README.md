@@ -18,6 +18,7 @@ Claude Code loads it automatically when you ask for a Mongolian тайлан, а
 - `GRAMMAR.md`: verb endings and evidentiality, punctuation, numbers and dates
 - `STRUCTURE.md`: MNS 5140 document structure, names and abbreviations
 - `WORDS.md`: calques that were shipped and rejected, with the correct words
+- `TERMS.md`, `terms.json`: 60 software terms, kept English, Cyrillic loanword or native word, for a dev note and for an official document, with evidence
 - `bolor.py`: checks a draft and looks words up on bolor-toli.com. Python 3, standard library only.
 - `test_bolor.py`: one known-bad sentence per check, plus correct sentences that must come back clean.
 
@@ -36,6 +37,20 @@ draft.md:2: WARN [evidential] унтарчээ — -жээ with no cited source 
 An ERROR fails the scan (exit 1): known calques, би/бид/манай outside quotes, colloquial -чих forms, Cyrillicized brand names (КьюПэй), and mixed number or percent formats in one document. A WARN is a heuristic to read, not to obey blindly. If a hit is right for your text, skip it with `--allow=хаалга`.
 
 `bolor.py <үг>` prints what a word actually means on bolor-toli.com. Please keep lookups at human pace; results are cached in `~/.cache/bolor-toli.json`. Without a network the lookup says so, and the scan still works.
+
+## Translate a technical term or not?
+
+```sh
+python3 ~/.claude/skills/mongolian-report-writing/bolor.py --term deploy
+```
+
+```
+deploy  [unsure]
+  dev      deploy  (english)
+  official ашиглалтад нэвтрүүлэх  (native)
+```
+
+`--scan --setting=official` checks a letter or report against the official column. See `TERMS.md` for how the evidence was collected and how to add a term.
 
 ## Add a calque you caught
 

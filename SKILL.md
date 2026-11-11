@@ -21,6 +21,10 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 5. **Cut news-story voice.** No rhetorical questions, no idioms ("гал дээр тос нэмэх"), no colloquial contractions (-чихсон), no bare first-person quotes dropped into narration. Attribute institutionally in third person (ablative: "ХХХ-аас мэдээлэв") or by title+name+reporting-verb, never as inner monologue. See STRUCTURE.md §7 and WORDS.md §5.
 
 6. **Don't translate the non-translatable.** Proper names — product/brand/system names (eBarimt, QPay, SocialPay, iPhone, OpenAI), company names, payment-method names — stay in their original script, never forced into a Cyrillic calque or invented Mongolian equivalent. Real corpus usage confirms this: "iPhone Duo", "OpenAI", "Bank of China", "CIFIT 2026" all appear in Latin script inside otherwise-Cyrillic sentences. This is distinct from ordinary organization names, which the standard *does* want spelled out in full + abbreviated (STRUCTURE.md §5) — that rule is for genuine Mongolian institutional names, not foreign product/brand names.
+   **Check how Mongolian text actually writes a technical term: `python3 ~/.claude/skills/mongolian-report-writing/bolor.py --term <word>`.**
+   It says whether the term stays English, becomes a Cyrillic loanword (сервер) or has a native
+   word in use (нууц үг), separately for a dev note and an official document, with evidence.
+   See TERMS.md. For a term not listed, the default below holds.
    **In a technical note, do not translate English technical terms at all** — `prod`,
    `staging`, `pipeline`, `build`, `release`, `rollback`. If the tooling prints
    `prod-903f343d`, write `prod`. Measured failure: *production environment* →
@@ -43,8 +47,11 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 1. Write the draft to a file and run the scanner on it. It must exit 0:
 
    ```sh
-   python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan draft.md
+   python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan draft.md --setting=dev
    ```
+
+   Use `--setting=official` for a letter or report to a government body, bank or customer:
+   the term checks (TERMS.md) then expect the official rendering.
 
    ERROR lines fail the scan: measured calques (WORDS.md §2), би/бид/манай outside quotes,
    colloquial -чих forms, Cyrillicized brand names, and mixed number or percent formats.
@@ -61,7 +68,7 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 - [ ] No English metaphor carried across that the scanner doesn't know yet: does this word have an everyday physical sense a reader would picture here? (default 7)
 - [ ] Acronyms/org names spelled out in full once, abbreviation in parens, short form after — STRUCTURE.md §5
 - [ ] Case endings match each word's own vowel class — GRAMMAR.md §1-2
-- [ ] English technical terms left untranslated (`prod`, `staging`, `pipeline`, `build`)
+- [ ] Every technical term rendered as TERMS.md says for this setting; terms not listed stay English in a dev note
 - [ ] **Outward-facing Mongolian (ticket, PR description, customer doc) is shown in the
       terminal and posted only after the user says so.** Both measured calque batches were
       caught by a human reading the text; one reached a customer-visible ticket
@@ -72,6 +79,7 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 - **STRUCTURE.md** — MNS 5140 standard, document structure, resolution/academic templates, verb mood/voice, first-person avoidance, terminology/acronyms, formatting, anti-patterns.
 - **GRAMMAR.md** — the 8 noun cases, vowel harmony, verb tense/evidentiality in depth, common mistakes, punctuation, numbers/dates/units.
 - **WORDS.md** — the calque table: 27 measured English-metaphor errors from a real translation, with correct replacements; term collisions; how to translate a marketing sentence into a report sentence.
+- **TERMS.md** + `terms.json` — 60 software terms: English, Cyrillic loanword, or native word, per setting, with dictionary and real-usage evidence.
 - **bolor.py** — bolor-toli.com lookup and blocklist scanner. `bolor.py <үг>` prints a word's real
   senses with domain tags; `bolor.py --scan <file>` runs every scriptable check and exits
   non-zero on an ERROR. Add a new calque to its `CALQUES` list and a test line to
