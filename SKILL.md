@@ -18,7 +18,7 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 
 4. **Pick one number/date/currency convention and hold it.** Real Mongolian sources are genuinely inconsistent (comma vs. space thousands separators, % vs. хувь, dotted vs. spelled-out dates) — that's a documented finding, not something to copy. A report must be internally consistent even where the wild corpus isn't. See GRAMMAR.md §6 and STRUCTURE.md §6 for the actual conventions to choose from.
 
-5. **Cut news-story voice.** No rhetorical questions, no idioms ("гал дээр тос нэмэх"), no colloquial contractions (-чихсон), no bare first-person quotes dropped into narration. Attribute institutionally in third person (ablative: "ХХХ-аас мэдээлэв") or by title+name+reporting-verb, never as inner monologue. See STYLE.md §3 for the full formal-vs-news contrast table.
+5. **Cut news-story voice.** No rhetorical questions, no idioms ("гал дээр тос нэмэх"), no colloquial contractions (-чихсон), no bare first-person quotes dropped into narration. Attribute institutionally in third person (ablative: "ХХХ-аас мэдээлэв") or by title+name+reporting-verb, never as inner monologue. See STRUCTURE.md §7 and WORDS.md §5.
 
 6. **Don't translate the non-translatable.** Proper names — product/brand/system names (eBarimt, QPay, SocialPay, iPhone, OpenAI), company names, payment-method names — stay in their original script, never forced into a Cyrillic calque or invented Mongolian equivalent. Real corpus usage confirms this: "iPhone Duo", "OpenAI", "Bank of China", "CIFIT 2026" all appear in Latin script inside otherwise-Cyrillic sentences. This is distinct from ordinary organization names, which the standard *does* want spelled out in full + abbreviated (STRUCTURE.md §5) — that rule is for genuine Mongolian institutional names, not foreign product/brand names.
    **In a technical note, do not translate English technical terms at all** — `prod`,
@@ -40,33 +40,41 @@ Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real governme
 
 ## Workflow
 
-- [ ] Structure: two-part body present? Narrative report ends on ДҮГНЭЛТ?
-- [ ] Every verb ending deliberate (not defaulted to -лаа/-жээ out of habit) — GRAMMAR.md §3
-- [ ] Zero би/бид/манай anywhere, including in a translated "we found..." sentence
+1. Write the draft to a file and run the scanner on it. It must exit 0:
+
+   ```sh
+   python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan draft.md
+   ```
+
+   ERROR lines fail the scan: measured calques (WORDS.md §2), би/бид/манай outside quotes,
+   colloquial -чих forms, Cyrillicized brand names, and mixed number or percent formats.
+   WARN lines are heuristics to read, not to obey blindly: -жээ with no cited source
+   (GRAMMAR.md §3), question marks, « » quotes, initials with no period. If a hit is right
+   for this text (a real door), pass `--allow=хаалга`.
+
+2. Look up every Mongolian word you chose for a technical sense:
+   `python3 ~/.claude/skills/mongolian-report-writing/bolor.py <үг>` prints what the word actually means, with domain tags.
+
+3. Check by reading what no script can:
+- [ ] Structure: two-part body present? Narrative report ends on ДҮГНЭЛТ? (STRUCTURE.md §2)
+- [ ] Every verb ending deliberate: -сан/-сэн for the report's own findings — GRAMMAR.md §3
+- [ ] No English metaphor carried across that the scanner doesn't know yet: does this word have an everyday physical sense a reader would picture here? (default 7)
 - [ ] Acronyms/org names spelled out in full once, abbreviation in parens, short form after — STRUCTURE.md §5
-- [ ] Case endings match each word's own vowel class (don't copy the previous word's suffix) — GRAMMAR.md §1-2
-- [ ] Numbers/dates/currency use one consistent convention throughout — GRAMMAR.md §6
-- [ ] No news-register leakage (idiom, rhetorical question, colloquial contraction) — STYLE.md §3
-- [ ] Every noun/verb checked against WORDS.md §2 — no English metaphor carried across word-for-word (хаалга/давалгаа/чимээгүй/дотор орох/флот/дахин асаах class)
-- [ ] Product/brand/system names left untranslated in original script (eBarimt, QPay, iPhone, etc.); only genuine Mongolian org names get the spell-out-then-abbreviate treatment
+- [ ] Case endings match each word's own vowel class — GRAMMAR.md §1-2
 - [ ] English technical terms left untranslated (`prod`, `staging`, `pipeline`, `build`)
-- [ ] `./bolor.py <үг>` run on any Mongolian word used for a technical sense — it prints
-      what the word actually means, which is the fact the physical-sense check lacks
-- [ ] `./bolor.py --scan <draft>` run on the finished draft; it must exit 0
 - [ ] **Outward-facing Mongolian (ticket, PR description, customer doc) is shown in the
       terminal and posted only after the user says so.** Both measured calque batches were
       caught by a human reading the text; one reached a customer-visible ticket
       because it was posted unreviewed. This gate is the only thing with a 100% catch rate.
-- [ ] Punctuation: straight quotes " ", period after name-initials (Л.Оюун-Эрдэнэ), comma before fronted subordinate clauses — GRAMMAR.md §5
 
 ## Reference files
 
 - **STRUCTURE.md** — MNS 5140 standard, document structure, resolution/academic templates, verb mood/voice, first-person avoidance, terminology/acronyms, formatting, anti-patterns.
 - **GRAMMAR.md** — the 8 noun cases, vowel harmony, verb tense/evidentiality in depth, common mistakes, punctuation, numbers/dates/units.
 - **WORDS.md** — the calque table: 27 measured English-metaphor errors from a real translation, with correct replacements; term collisions; how to translate a marketing sentence into a report sentence.
-- **bolor.py** — bolor-toli.com lookup and blocklist scanner. `./bolor.py <үг>` prints a
-  word's real senses with domain tags; `./bolor.py --scan <file>` greps the measured
-  calques over a draft and exits non-zero on a hit. Use it instead of adding table rows.
-- **STYLE.md** — connective/transition words, attribution patterns, sentence/paragraph rhythm, and the formal-report-vs-news-story contrast table.
+- **bolor.py** — bolor-toli.com lookup and blocklist scanner. `bolor.py <үг>` prints a word's real
+  senses with domain tags; `bolor.py --scan <file>` runs every scriptable check and exits
+  non-zero on an ERROR. Add a new calque to its `CALQUES` list and a test line to
+  `test_bolor.py`, instead of only adding a table row.
 
 Every rule in these files traces to a real cited source (government PDF, legalinfo.mn, montsame.mn, corpus article) or is explicitly marked as reasoned synthesis rather than a quoted rule — check the citation if something looks off rather than assuming it's settled.

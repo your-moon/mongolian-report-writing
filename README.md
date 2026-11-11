@@ -18,4 +18,25 @@ Claude Code loads it automatically when you ask for a Mongolian тайлан, а
 - `GRAMMAR.md`: verb endings and evidentiality, punctuation, numbers and dates
 - `STRUCTURE.md`: MNS 5140 document structure, names and abbreviations
 - `WORDS.md`: calques that were shipped and rejected, with the correct words
-- `bolor.py`: looks up a word on bolor-toli.com (`bolor.py үг`) and scans a draft for known calques (`bolor.py --scan draft.md`). Python 3, standard library only. Please keep lookups at human pace.
+- `bolor.py`: checks a draft and looks words up on bolor-toli.com. Python 3, standard library only.
+- `test_bolor.py`: one known-bad sentence per check, plus correct sentences that must come back clean.
+
+## Check a draft
+
+```sh
+python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan draft.md
+```
+
+```
+draft.md:1: ERROR [calque] үйлдвэрлэлийн орчин — factory manufacturing; write prod / бодит орчин
+draft.md:1: ERROR [first-person] бид — no би/бид/манай; name the organization or write тус байгууллага
+draft.md:2: WARN [evidential] унтарчээ — -жээ with no cited source sounds secondhand; use -сан/-сэн
+```
+
+An ERROR fails the scan (exit 1): known calques, би/бид/манай outside quotes, colloquial -чих forms, Cyrillicized brand names (КьюПэй), and mixed number or percent formats in one document. A WARN is a heuristic to read, not to obey blindly. If a hit is right for your text, skip it with `--allow=хаалга`.
+
+`bolor.py <үг>` prints what a word actually means on bolor-toli.com. Please keep lookups at human pace; results are cached in `~/.cache/bolor-toli.json`. Without a network the lookup says so, and the scan still works.
+
+## Add a calque you caught
+
+Add a line to `CALQUES` in `bolor.py`, add the bad sentence to `BAD` in `test_bolor.py`, and run `python3 -m unittest test_bolor`.
