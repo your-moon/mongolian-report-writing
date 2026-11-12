@@ -1,0 +1,5243 @@
+[
+ {
+  "term": "deploy",
+  "status": "unsure",
+  "official": "ашиглалтад нэвтрүүлэх",
+  "dev": "deploy",
+  "pick": "deploy",
+  "decision": "review",
+  "why": "web only, not decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "deploy",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.09677,
+    "web_cooc": 6,
+    "tech": 1,
+    "all": 5,
+    "share": 0.2,
+    "lift": 9.427866463469536,
+    "tag": "mined"
+   },
+   {
+    "surface": "суурилсан байна",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.05674,
+    "web_cooc": 4,
+    "tech": 115,
+    "all": 596,
+    "share": 0.1929530201342282,
+    "lift": 9.09567653774326,
+    "tag": "mined"
+   },
+   {
+    "surface": "ийг хэрхэн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.05556,
+    "web_cooc": 4,
+    "tech": 29,
+    "all": 348,
+    "share": 0.08333333333333333,
+    "lift": 3.9282776931123062,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "l:deploy": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "суури байна": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "ийг хэрхэ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Comments on AOMEI Image Deploy ",
+     "Татаж авах AOMEI Image Deploy "
+    ],
+    [
+     "Official page: AOMEI Image Deploy ",
+     "Албан ёсны хуудас: AOMEI Image Deploy "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "release",
+  "status": "unsure",
+  "official": "гаргах",
+  "dev": "release",
+  "pick": "дээрх түгжээ",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "дээрх түгжээ",
+    "ui": 0.375,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "авч чадсангүй",
+    "ui": 0.35294,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 1,
+    "tech": 70,
+    "all": 1544,
+    "share": 0.04533678756476684,
+    "lift": 2.13714589521654,
+    "tag": "mined"
+   },
+   {
+    "surface": "гарсан",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.19153,
+    "web_cooc": 199,
+    "tech": 4497,
+    "all": 109402,
+    "share": 0.04110528143909618,
+    "lift": 1.937675521755658,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "дээрх түгжэ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "авч чадса": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "гарса": {
+    "status": "flag",
+    "note": "first sense 'occurred' non-technical",
+    "senses": [
+     "occurred",
+     "ascendant",
+     "west"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Could not release lock for \"$1\".",
+     "\"$1\" дээрх түгжээ файлыг авч чадсангүй."
+    ],
+    [
+     "Could not release locks on database $1.",
+     "$1 сан дээрх түгжээг авч чадсангүй."
+    ]
+   ],
+   "web": []
+  }
+ },
+ {
+  "term": "rollback",
+  "status": "unsure",
+  "official": "өмнөх хувилбарт буцаах",
+  "dev": "rollback",
+  "pick": "rollback",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "rollback",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 1.0,
+    "web_cooc": 4,
+    "tech": 0,
+    "all": 7,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "дн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.00567,
+    "web_cooc": 2,
+    "tech": 1,
+    "all": 250,
+    "share": 0.004,
+    "lift": 0.18855732926939073,
+    "tag": "mined"
+   },
+   {
+    "surface": "ч",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.00017,
+    "web_cooc": 2,
+    "tech": 52554,
+    "all": 1304906,
+    "share": 0.040274165342177905,
+    "lift": 1.8984972638687307,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "l:rollback": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "дн": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "ч": {
+    "status": "flag",
+    "note": "first sense 'even' non-technical",
+    "senses": [
+     "even",
+     "spite",
+     "nay"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Rollback feature ",
+     "Rollback онцлог "
+    ],
+    [
+     "29 rollback 30d 04:32h 86% 5,600 6,272 0.89 ",
+     "28 rollback 30дн 04:51ч 97% 5.600 6.272 0,89 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "build",
+  "status": "unsure",
+  "official": "хувилбар",
+  "dev": "build",
+  "pick": "картуудыг хоосон тайзны",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "картуудыг хоосон тайзны",
+    "ui": 0.66667,
+    "ui_cooc": 8,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "нүх рүү зөөх",
+    "ui": 0.66667,
+    "ui_cooc": 8,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "залгаа картуудыг хоосон",
+    "ui": 0.66667,
+    "ui_cooc": 8,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "карту хоосо тайзн": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "нүх рүү зөөх": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "залга карту хоосо": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Move a build of cards on to the empty Tableau slot",
+     "Залгаа картуудыг хоосон Тайзны нүх рүү зөөх"
+    ],
+    [
+     "Move a build of cards on to the empty Tableau slot",
+     "Залгаа картуудыг хоосон Тайзны нүх рүү зөөх"
+    ]
+   ],
+   "web": []
+  }
+ },
+ {
+  "term": "commit",
+  "status": "unsure",
+  "official": "өөрчлөлтийг хадгалах",
+  "dev": "commit",
+  "pick": "үйлдсэн",
+  "decision": "review",
+  "why": "sense flag: first sense 'perpetrable' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "үйлдсэн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.15881,
+    "web_cooc": 32,
+    "tech": 284,
+    "all": 22401,
+    "share": 0.012678005446185438,
+    "lift": 0.5976327118488791,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүрэг хүлээнэ",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.12332,
+    "web_cooc": 23,
+    "tech": 202,
+    "all": 7235,
+    "share": 0.02791983413959917,
+    "lift": 1.316122339751794,
+    "tag": "mined"
+   },
+   {
+    "surface": "ажиллаж байна",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.09108,
+    "web_cooc": 48,
+    "tech": 4443,
+    "all": 75594,
+    "share": 0.05877450591316771,
+    "lift": 2.770590966028729,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "үйлдс": {
+    "status": "flag",
+    "note": "first sense 'perpetrable' non-technical",
+    "senses": [
+     "perpetrable"
+    ]
+   },
+   "үүрэг хүлээ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "ажилл байна": {
+    "status": "flag",
+    "note": "first sense 'in operation' non-technical",
+    "senses": [
+     "in operation"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "change list: OE-7 Commits (done before: c7b41b2) ",
+     "өөрчлөлт жагсаалт: МБ-7 үйлдсэн (өмнө нь хийсэн: c7b41b2) "
+    ],
+    [
+     "An armed attack was committed on the Canadian Crypto Exchange - Blockchain News ",
+     "Зэвсэгт халдлага Канадын Crypto бирж дээр үйлдсэн байсан - Blockchain Мэдээ мэдээлэл "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "merge",
+  "status": "unsure",
+  "official": "нэгтгэх",
+  "dev": "merge",
+  "pick": "нэгтгэх",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "нэгтгэх",
+    "ui": 0.80556,
+    "ui_cooc": 29,
+    "web": 0.10714,
+    "web_cooc": 45,
+    "tech": 2359,
+    "all": 35218,
+    "share": 0.06698279288999943,
+    "lift": 3.1575241335857567,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "түүхийн",
+    "ui": 0.22642,
+    "ui_cooc": 6,
+    "web": 0.0,
+    "web_cooc": 1,
+    "tech": 2015,
+    "all": 67745,
+    "share": 0.0297438925381947,
+    "lift": 1.4021072347694379,
+    "tag": "mined"
+   },
+   {
+    "surface": "тухайн викигийн бүртгэл",
+    "ui": 0.22222,
+    "ui_cooc": 4,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "нэгтг": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "integration",
+     "sum up",
+     "join",
+     "associate"
+    ]
+   },
+   "түүхи": {
+    "status": "flag",
+    "note": "first sense 'historical' non-technical",
+    "senses": [
+     "historical",
+     "chronographic",
+     "classic"
+    ]
+   },
+   "тухай викиг бүртг": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Merge revisions",
+     "Засваруудыг нэгтгэх"
+    ],
+    [
+     "Merge page histories",
+     "Хуудаснуудын түүхийг нэгтгэх"
+    ]
+   ],
+   "web": [
+    [
+     "Merged Concord flyght problems ",
+     "Нэгтгэсэн Concord flyght асуудлууд "
+    ],
+    [
+     "Florya and Beşyol Metrobus Station to be merged ",
+     "Флоря ба Бешёл метробус станцыг нэгтгэх болно "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "branch",
+  "status": "unsure",
+  "official": "branch",
+  "dev": "branch",
+  "pick": "салбар",
+  "decision": "review",
+  "why": "web only, not decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "салбар",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.19261,
+    "web_cooc": 310,
+    "tech": 15054,
+    "all": 318270,
+    "share": 0.047299462720331795,
+    "lift": 2.2296650916057184,
+    "tag": "mined"
+   },
+   {
+    "surface": "банкны",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.04469,
+    "web_cooc": 33,
+    "tech": 7992,
+    "all": 89118,
+    "share": 0.08967885275701878,
+    "lift": 4.2274012419516,
+    "tag": "mined"
+   },
+   {
+    "surface": "мобиком",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.03422,
+    "web_cooc": 16,
+    "tech": 434,
+    "all": 3429,
+    "share": 0.12656751239428404,
+    "lift": 5.966308027334176,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "салба": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "division (comm.)",
+     "world",
+     "wing",
+     "domain"
+    ]
+   },
+   "банкн": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "мобик": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Sansar branch ",
+     "Сансар салбар "
+    ],
+    [
+     "ATM, Branches ",
+     "ATM, Салбарууд "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "pipeline",
+  "status": "unsure",
+  "official": "pipeline",
+  "dev": "pipeline",
+  "pick": "дамжуулах хоолой",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "дамжуулах хоолой",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.39098,
+    "web_cooc": 26,
+    "tech": 49,
+    "all": 1022,
+    "share": 0.04794520547945205,
+    "lift": 2.2601049741194092,
+    "tag": "mined"
+   },
+   {
+    "surface": "шугам хоолой",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.33103,
+    "web_cooc": 24,
+    "tech": 117,
+    "all": 1357,
+    "share": 0.08621960206337509,
+    "lift": 4.064334473934914,
+    "tag": "mined"
+   },
+   {
+    "surface": "ус дамжуулах",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.24074,
+    "web_cooc": 13,
+    "tech": 45,
+    "all": 366,
+    "share": 0.12295081967213115,
+    "lift": 5.795819547214879,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "дамжу хооло": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "carriage",
+     "tubing",
+     "pipework",
+     "pipeline"
+    ]
+   },
+   "шугам хооло": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "ус дамжу": {
+    "status": "flag",
+    "note": "first sense 'water' non-technical",
+    "senses": [
+     "water"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "pipelines SS/UPVC ",
+     "дамжуулах хоолой SS / Хуванцар "
+    ],
+    [
+     "Pipeline pressurized miniature water pump DS3913 ",
+     "Дамжуулах хоолой даралтат бяцхан усны насос DS3913 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "staging",
+  "status": "unsure",
+  "official": "туршилтын орчин",
+  "dev": "staging",
+  "pick": null,
+  "decision": "review",
+  "why": "no data",
+  "collision": [],
+  "top": [
+   {
+    "surface": "турши орчин",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 4,
+    "all": 16,
+    "share": 0.25,
+    "lift": 11.78483307933692,
+    "tag": "rendering"
+   },
+   {
+    "surface": "staging",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 2,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "latin"
+   }
+  ],
+  "sense": {
+   "турши орчин": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "l:staging": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {}
+ },
+ {
+  "term": "production/prod",
+  "status": "unsure",
+  "official": "ашиглалтын орчин",
+  "dev": "prod",
+  "pick": "үйлдвэр",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "үйлдвэр",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.27739,
+    "web_cooc": 1829,
+    "tech": 14544,
+    "all": 412263,
+    "share": 0.0352784508917851,
+    "lift": 1.6630026202290884,
+    "tag": "mined"
+   },
+   {
+    "surface": "чанарын хяналт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.15881,
+    "web_cooc": 209,
+    "tech": 152,
+    "all": 2685,
+    "share": 0.05661080074487896,
+    "lift": 2.668595349064003,
+    "tag": "mined"
+   },
+   {
+    "surface": "шугам",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.11504,
+    "web_cooc": 249,
+    "tech": 2556,
+    "all": 37270,
+    "share": 0.06858062785081835,
+    "lift": 3.2328450067920755,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "үйлдв": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "plant",
+     "factory",
+     "show",
+     "proposition"
+    ]
+   },
+   "чанар хянал": {
+    "status": "flag",
+    "note": "first sense 'quality inspection' non-technical",
+    "senses": [
+     "quality inspection (comm.)",
+     "quality control work"
+    ]
+   },
+   "шугам": {
+    "status": "flag",
+    "note": "first sense 'line' non-technical",
+    "senses": [
+     "line",
+     "ruler",
+     "bus",
+     "branch"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Production: 30days ",
+     "Үйлдвэрлэл: 30days "
+    ],
+    [
+     "Production Platform ",
+     "үйлдвэрлэл платформ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "server",
+  "status": "confirmed",
+  "official": "сервер",
+  "dev": "сервер",
+  "pick": "сервер",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "сервер",
+    "ui": 0.74419,
+    "ui_cooc": 16,
+    "web": 0.72452,
+    "web_cooc": 1244,
+    "tech": 3827,
+    "all": 6449,
+    "share": 0.593425337261591,
+    "lift": 27.97367417870826,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "server",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.33871,
+    "web_cooc": 357,
+    "tech": 354,
+    "all": 937,
+    "share": 0.37780149413020275,
+    "lift": 17.809310181794107,
+    "tag": "mined"
+   },
+   {
+    "surface": "хяналт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.12063,
+    "web_cooc": 283,
+    "tech": 10622,
+    "all": 186643,
+    "share": 0.05691078690333953,
+    "lift": 2.68273649627828,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "серве": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "server (comp.)",
+     "SQL server (comp.)"
+    ]
+   },
+   "l:server": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "хянал": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "cheque",
+     "check",
+     "control",
+     "watching"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Server is unreachable.",
+     "Сервер холбогдох боломжгүй."
+    ],
+    [
+     "The server is not responding.",
+     "Сервер хариу өгөхгүй байна."
+    ]
+   ],
+   "web": [
+    [
+     "Cloud Server ",
+     "CRM сервер "
+    ],
+    [
+     "Europe Server ",
+     "УС Сервер "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "database",
+  "status": "confirmed",
+  "official": "өгөгдлийн сан",
+  "dev": "өгөгдлийн сан",
+  "pick": "мэдээллийн сан",
+  "decision": "review",
+  "why": "ui top сангийн vs web top database",
+  "collision": [],
+  "top": [
+   {
+    "surface": "мэдээллийн сан",
+    "ui": 0.27907,
+    "ui_cooc": 6,
+    "web": 0.29303,
+    "web_cooc": 103,
+    "tech": 993,
+    "all": 8898,
+    "share": 0.11159811193526635,
+    "lift": 5.260660484505085,
+    "tag": "mined"
+   },
+   {
+    "surface": "сангийн",
+    "ui": 0.44444,
+    "ui_cooc": 12,
+    "web": 0.06852,
+    "web_cooc": 37,
+    "tech": 3663,
+    "all": 85974,
+    "share": 0.042605904110545045,
+    "lift": 2.0084138725480325,
+    "tag": "mined"
+   },
+   {
+    "surface": "баазыг",
+    "ui": 0.35556,
+    "ui_cooc": 8,
+    "web": 0.12063,
+    "web_cooc": 38,
+    "tech": 328,
+    "all": 3579,
+    "share": 0.09164571109248393,
+    "lift": 4.3201176306482365,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "мэдээ сан": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "database",
+     "data base"
+    ]
+   },
+   "санги": {
+    "status": "flag",
+    "note": "first sense 'finance' non-technical",
+    "senses": [
+     "finance"
+    ]
+   },
+   "баазы": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Database locked",
+     "Мэдээллийн сан түгжигдсэн байна"
+    ],
+    [
+     "Database $1 does not exist or is not local.",
+     "$1 мэдээллийн сан байхгүй, эсвэл дотоодынх биш байна."
+    ]
+   ],
+   "web": [
+    [
+     "1 Million Uk B2c Database ",
+     "1 сая Uk B2c мэдээллийн сан "
+    ],
+    [
+     "Payday Long Form Database ",
+     "Payday Long Forms мэдээллийн сан "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "backup",
+  "status": "unsure",
+  "official": "нөөцлөлт",
+  "dev": "backup",
+  "pick": "нөөцлөх",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "нөөцлөх",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.42462,
+    "web_cooc": 69,
+    "tech": 332,
+    "all": 1740,
+    "share": 0.19080459770114944,
+    "lift": 8.994401338712317,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "backup",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.20096,
+    "web_cooc": 21,
+    "tech": 83,
+    "all": 160,
+    "share": 0.51875,
+    "lift": 24.45352863962411,
+    "tag": "mined"
+   },
+   {
+    "surface": "альфа на",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.10695,
+    "web_cooc": 10,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "нөөцл": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "backup (comp.)",
+     "store",
+     "reserve",
+     "pit"
+    ]
+   },
+   "l:backup": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "альфа на": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Cloud backup ",
+     "Cloud нөөцлөлт "
+    ],
+    [
+     "Tagged: Backup ",
+     "Tagged: Нөөцлөх "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "restore",
+  "status": "unsure",
+  "official": "сэргээх",
+  "dev": "сэргээх",
+  "pick": "цэсийн стандарт загварыг",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "цэсийн стандарт загварыг",
+    "ui": 0.6,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "стандарт загварыг сэргээх",
+    "ui": 0.6,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "сэргээх",
+    "ui": 0.2,
+    "ui_cooc": 5,
+    "web": 0.1436,
+    "web_cooc": 83,
+    "tech": 4057,
+    "all": 99341,
+    "share": 0.040839129865815726,
+    "lift": 1.925129314296006,
+    "tag": "mined+rendering"
+   }
+  ],
+  "sense": {
+   "цэсий станд загва": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "станд загва сэргэ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "сэргэ": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "proceed",
+     "restore",
+     "recover (tech.)",
+     "retrieve"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Restore the default menu layout",
+     "Цэсийн стандарт загварыг сэргээх"
+    ],
+    [
+     "Restore the default menu layout",
+     "Цэсийн стандарт загварыг сэргээх"
+    ]
+   ],
+   "web": []
+  }
+ },
+ {
+  "term": "log",
+  "status": "unsure",
+  "official": "системийн лог",
+  "dev": "log",
+  "pick": "лог",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "лог",
+    "ui": 0.36792,
+    "ui_cooc": 39,
+    "web": 0.10147,
+    "web_cooc": 31,
+    "tech": 67,
+    "all": 220,
+    "share": 0.30454545454545456,
+    "lift": 14.356069387555884,
+    "tag": "mined"
+   },
+   {
+    "surface": "нэвтэрч",
+    "ui": 0.32381,
+    "ui_cooc": 34,
+    "web": 0.06049,
+    "web_cooc": 33,
+    "tech": 3198,
+    "all": 38892,
+    "share": 0.0822277074976859,
+    "lift": 3.8761592294270772,
+    "tag": "mined"
+   },
+   {
+    "surface": "нэвтрэх",
+    "ui": 0.31624,
+    "ui_cooc": 37,
+    "web": 0.06478,
+    "web_cooc": 110,
+    "tech": 13778,
+    "all": 135224,
+    "share": 0.10189019700644857,
+    "lift": 4.803035856567003,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "лог": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "нэвтэ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "нэвтр": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "login (comp.)",
+     "damage-feasant",
+     "enter",
+     "nip in"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Deletion log:",
+     "Устгалын лог"
+    ],
+    [
+     "Open Log File",
+     "Лог файлыг нээ"
+    ]
+   ],
+   "web": [
+    [
+     "Birch Wood Logs ",
+     "нарс мод лог "
+    ],
+    [
+     "Diameter logs D ",
+     "Диаметр нь лог D "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "bug",
+  "status": "confirmed",
+  "official": "алдаа",
+  "dev": "bug",
+  "pick": "алдаа",
+  "decision": "review",
+  "why": "collision with error",
+  "collision": [
+   "error"
+  ],
+  "top": [
+   {
+    "surface": "алдаа",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.13626,
+    "web_cooc": 62,
+    "tech": 4490,
+    "all": 54529,
+    "share": 0.08234150635441692,
+    "lift": 3.881523631551855,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "бугс",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.11966,
+    "web_cooc": 7,
+    "tech": 0,
+    "all": 43,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "фикед",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.10435,
+    "web_cooc": 6,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "алдаа": {
+    "status": "flag",
+    "note": "first sense 'error' non-technical",
+    "senses": [
+     "error",
+     "mistake",
+     "fault",
+     "break"
+    ]
+   },
+   "бугс": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "фикед": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "A database query error has occurred. This may indicate a bug in the software.",
+     "Өгөгдлийн сангийн query ны алдаа гарлаа. Програмд bug байх магадлалтай."
+    ],
+    [
+     "The action specified by the URL is invalid. You might have mistyped the URL, or followed an incorrect link. This might also indicate a bug in the software used by {{SITENAME}}.",
+     "URL-н заасан үйлдэл викид танигдахгүй байна. Та нэг бол URL-г буруу бичсэн, эсвэл буруу холбоосоор орсон байна. Энэ нь мөн {{SITENAME}}-н хэрэглэж буй программ хангамж алдаатай байсныг зааж болно."
+    ]
+   ],
+   "web": [
+    [
+     "Bed Bug Trap ",
+     "Орны Алдааны Trap "
+    ],
+    [
+     "Bed Bug Trap2 ",
+     "Орны Алдааны Trap2 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "fix",
+  "status": "confirmed",
+  "official": "засвар",
+  "dev": "fix",
+  "pick": "тогтмол",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "тогтмол",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.25455,
+    "web_cooc": 217,
+    "tech": 2201,
+    "all": 37263,
+    "share": 0.05906663446314038,
+    "lift": 2.7843617108252756,
+    "tag": "mined"
+   },
+   {
+    "surface": "засах",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.2496,
+    "web_cooc": 155,
+    "tech": 1149,
+    "all": 32068,
+    "share": 0.03583011101409505,
+    "lift": 1.6890075100608857,
+    "tag": "mined"
+   },
+   {
+    "surface": "fix",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0705,
+    "web_cooc": 27,
+    "tech": 25,
+    "all": 137,
+    "share": 0.18248175182481752,
+    "lift": 8.602067941121838,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "тогтм": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "regular",
+     "constant",
+     "seasonal",
+     "permanent"
+    ]
+   },
+   "засах": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "correct",
+     "refurbish",
+     "reclaim",
+     "faceting"
+    ]
+   },
+   "l:fix": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Fixed antennas ",
+     "Тогтмол антен "
+    ],
+    [
+     "fixed type-2 ",
+     "тогтмол төрөл-2 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "feature",
+  "status": "unsure",
+  "official": "боломж",
+  "dev": "feature",
+  "pick": "функцийг ашиглаж",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "функцийг ашиглаж",
+    "ui": 0.44444,
+    "ui_cooc": 4,
+    "web": 0.00333,
+    "web_cooc": 4,
+    "tech": 73,
+    "all": 180,
+    "share": 0.40555555555555556,
+    "lift": 19.117618106479892,
+    "tag": "mined"
+   },
+   {
+    "surface": "онцлох",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.43721,
+    "web_cooc": 947,
+    "tech": 4553,
+    "all": 116602,
+    "share": 0.03904735767825595,
+    "lift": 1.8406663697096446,
+    "tag": "mined"
+   },
+   {
+    "surface": "мэйл хаягаа",
+    "ui": 0.31579,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 1,
+    "tech": 130,
+    "all": 3120,
+    "share": 0.041666666666666664,
+    "lift": 1.9641388465561531,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "функц ашигл": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "онцло": {
+    "status": "flag",
+    "note": "first sense 'emphasis' non-technical",
+    "senses": [
+     "emphasis",
+     "discriminate",
+     "underline",
+     "point out"
+    ]
+   },
+   "мэйл хаяга": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Specify an email address in your preferences for these features to work.",
+     "Эдгээр функцуудыг ашиглахад мэйл хаягаа өгөх хэрэгтэй."
+    ],
+    [
+     "A confirmation code was sent to your email address. This code is not required to log in, but you will need to provide it before enabling any email-based features in the wiki.",
+     "Таны мэйл хаяг руу баталгаажуулалтын кодыг явууллаа. Нэвтрэхийн тулд энэ код хэрэггүй ч гэсэн вики дахь мэйлтэй холбогдсон функцуудыг ашиглахын тулд хэрэг болно."
+    ]
+   ],
+   "web": [
+    [
+     "The powerful graphics editor to work with the digital painting. The software has many tools and features to create professional artwork. ",
+     "Энэ бол янз бүрийн нөлөө, засварлах функцийг ашиглан зураг хоршоо, фото зургийн цомог, зурагт хуудас эсвэл бусад бүтээлч төслүүдийг бий болгох програм хангамж юм. "
+    ],
+    [
+     "We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: ",
+     "Бид бүртгүүлэх, худалдан авалт хийх, манай сонин дээр бүртгүүлэх, судалгаа, маркетингийн харилцаанд хариу өгөх, вебсайтаа үзэх, эсвэл бусад зарим сайтын функцийг ашиглана. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "update",
+  "status": "confirmed",
+  "official": "шинэчлэл",
+  "dev": "шинэчлэл",
+  "pick": "шинэчлэх",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "шинэчлэх",
+    "ui": 0.8642,
+    "ui_cooc": 35,
+    "web": 0.59855,
+    "web_cooc": 1488,
+    "tech": 9235,
+    "all": 124300,
+    "share": 0.0742960579243765,
+    "lift": 3.502266564366096,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "сүүлд",
+    "ui": 0.12308,
+    "ui_cooc": 4,
+    "web": 0.34585,
+    "web_cooc": 479,
+    "tech": 1224,
+    "all": 47619,
+    "share": 0.025704025704025704,
+    "lift": 1.2116706095557144,
+    "tag": "mined"
+   },
+   {
+    "surface": "хувилбар",
+    "ui": 0.09009,
+    "ui_cooc": 5,
+    "web": 0.0591,
+    "web_cooc": 125,
+    "tech": 5571,
+    "all": 55992,
+    "share": 0.09949635662237462,
+    "lift": 4.690191819187453,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "шинэч": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "update",
+     "renew",
+     "sophisticate",
+     "rehabilitation"
+    ]
+   },
+   "сүүлд": {
+    "status": "flag",
+    "note": "first sense 'last' non-technical",
+    "senses": [
+     "last",
+     "post",
+     "afterward",
+     "later"
+    ]
+   },
+   "хувил": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "version",
+     "alternate",
+     "scenario (geol.)",
+     "vary"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Update Status",
+     "Төлвийг шинэчлэх"
+    ],
+    [
+     "Update Priority",
+     "Эрэмбийг шинэчлэх"
+    ]
+   ],
+   "web": [
+    [
+     "30.5 Updates ",
+     "30.5 шинэчлэлтүүд "
+    ],
+    [
+     "Updated v1.2 ",
+     "шинэчлэгдсэн v1.2 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "upgrade",
+  "status": "confirmed",
+  "official": "шинэчлэл",
+  "dev": "шинэчлэл",
+  "pick": "өгөгдлийг шинэчлэх",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "өгөгдлийг шинэчлэх",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.22535,
+    "web_cooc": 40,
+    "tech": 3,
+    "all": 8,
+    "share": 0.375,
+    "lift": 17.67724961900538,
+    "tag": "mined"
+   },
+   {
+    "surface": "интернэт холболт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.17587,
+    "web_cooc": 43,
+    "tech": 1365,
+    "all": 2376,
+    "share": 0.5744949494949495,
+    "lift": 27.081308338880294,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүл үйлчилгээ",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.12754,
+    "web_cooc": 22,
+    "tech": 10,
+    "all": 17,
+    "share": 0.5882352941176471,
+    "lift": 27.729019010204517,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "өгөгд шинэч": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "интер холбо": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "үүл үйлчи": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "can connect to IPAD, cell phone, computer and the Internet, supporting remote shunting operation and data upgrade. ",
+     "IPAD, гар утас, компьютер, Интернеттэй холбогдож, алсын shunting үйлдэл болон өгөгдлийн шинэчлэлтийг дэмжих боломжтой. "
+    ],
+    [
+     "4. Supported by powerful cloud service, it can connect to IPAD, cell phone, computer and the Internet, supporting remote shunting operation and data upgrade. ",
+     "4. Хүчтэй үүлэн үйлчилгээг дэмждэг IPAD, гар утас, компьютер, Интернеттэй холбогдож, алсын shunting ажиллагаа болон өгөгдлийн шинэчлэлтийг дэмжих боломжтой. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "install",
+  "status": "confirmed",
+  "official": "суулгах",
+  "dev": "суулгах",
+  "pick": "суулгах",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "суулгах",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.57898,
+    "web_cooc": 843,
+    "tech": 7222,
+    "all": 41334,
+    "share": 0.17472298833889777,
+    "lift": 8.236325010787365,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "санах",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.13693,
+    "web_cooc": 127,
+    "tech": 1609,
+    "all": 13146,
+    "share": 0.12239464475886201,
+    "lift": 5.769601833151713,
+    "tag": "mined"
+   },
+   {
+    "surface": "ойн карт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.12121,
+    "web_cooc": 78,
+    "tech": 40,
+    "all": 82,
+    "share": 0.4878048780487805,
+    "lift": 22.994796252364722,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "суулг": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "instal (comp.)",
+     "install (comp.)",
+     "diarrhoea",
+     "diarrhea"
+    ]
+   },
+   "санах": {
+    "status": "flag",
+    "note": "first sense 'remember' non-technical",
+    "senses": [
+     "remember",
+     "miss",
+     "think",
+     "expect"
+    ]
+   },
+   "ойн карт": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Installed software",
+     "Суулгасан программ"
+    ],
+    [
+     "Installed extensions",
+     "Суулгасан өргөтгөлүүд"
+    ]
+   ],
+   "web": [
+    [
+     "Install and Run ",
+     "Суулгаад Run "
+    ],
+    [
+     "Install the apk. ",
+     "APK суулгах. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "uninstall",
+  "status": "unsure",
+  "official": "устгах",
+  "dev": "устгах",
+  "pick": "uninstall",
+  "decision": "review",
+  "why": "web only, not decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "uninstall",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.18182,
+    "web_cooc": 4,
+    "tech": 16,
+    "all": 28,
+    "share": 0.5714285714285714,
+    "lift": 26.93676132419867,
+    "tag": "mined"
+   },
+   {
+    "surface": "устгаж суулгаж",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.14286,
+    "web_cooc": 3,
+    "tech": 3,
+    "all": 9,
+    "share": 0.3333333333333333,
+    "lift": 15.713110772449225,
+    "tag": "mined"
+   },
+   {
+    "surface": "та устгах",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.13953,
+    "web_cooc": 3,
+    "tech": 13,
+    "all": 52,
+    "share": 0.25,
+    "lift": 11.78483307933692,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "l:uninstall": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "устга суулг": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "та устга": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Comments on Uninstall Tool ",
+     "Татаж авах Uninstall Tool "
+    ],
+    [
+     "Download Uninstall Tool 3.5.9 – Vessoft ",
+     "Uninstall Tool Дээрхи сэтгэгдэл "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "download",
+  "status": "confirmed",
+  "official": "татаж авах",
+  "dev": "татаж авах",
+  "pick": "татаж авах",
+  "decision": "review",
+  "why": "ui top татаж авах vs web top татаж",
+  "collision": [],
+  "top": [
+   {
+    "surface": "татаж авах",
+    "ui": 0.85714,
+    "ui_cooc": 6,
+    "web": 0.58932,
+    "web_cooc": 2583,
+    "tech": 3416,
+    "all": 29906,
+    "share": 0.11422457032033706,
+    "lift": 5.384469979136617,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "татаж",
+    "ui": 0.8,
+    "ui_cooc": 6,
+    "web": 0.62544,
+    "web_cooc": 2938,
+    "tech": 7942,
+    "all": 62810,
+    "share": 0.1264448336252189,
+    "lift": 5.960525032070932,
+    "tag": "mined"
+   },
+   {
+    "surface": "авах",
+    "ui": 0.44444,
+    "ui_cooc": 6,
+    "web": 0.35684,
+    "web_cooc": 2654,
+    "tech": 20694,
+    "all": 311308,
+    "share": 0.06647435979801354,
+    "lift": 3.133556937101497,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "татаж авах": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "extract",
+     "download (comp.)"
+    ]
+   },
+   "татаж": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "авах": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "withdraw",
+     "handhold",
+     "assume",
+     "accept"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Download QR code",
+     "QR код татаж авах"
+    ],
+    [
+     "Download as $1",
+     "$1 хэлбэрээр татаж авах"
+    ]
+   ],
+   "web": [
+    [
+     ">>> Download ",
+     ">>> Татаж авах "
+    ],
+    [
+     "DOWNLOAD PDF ",
+     "PDF ТАТАЖ АВАХ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "upload",
+  "status": "unsure",
+  "official": "байршуулах",
+  "dev": "байршуулах",
+  "pick": "оруулж",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "оруулж",
+    "ui": 0.40541,
+    "ui_cooc": 60,
+    "web": 0.02052,
+    "web_cooc": 40,
+    "tech": 18570,
+    "all": 414527,
+    "share": 0.04479804693059801,
+    "lift": 2.1117500214295966,
+    "tag": "mined"
+   },
+   {
+    "surface": "энд байршуулаад",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.40212,
+    "web_cooc": 114,
+    "tech": 1,
+    "all": 26,
+    "share": 0.038461538461538464,
+    "lift": 1.8130512429749108,
+    "tag": "mined"
+   },
+   {
+    "surface": "зургийг авна уу",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.39646,
+    "web_cooc": 112,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "оруул": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "энд байрш": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "зурги авна уу": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Uploaded files",
+     "Оруулсан файл"
+    ],
+    [
+     "Uploaded files",
+     "Оруулсан файл"
+    ]
+   ],
+   "web": [
+    [
+     "Free CV Upload ",
+     "CV оруулах "
+    ],
+    [
+     "Now: Upload CV! ",
+     "Одоо: CV-гээ оруулна уу! "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "login",
+  "status": "confirmed",
+  "official": "нэвтрэх",
+  "dev": "нэвтрэх",
+  "pick": "нэвтрэх",
+  "decision": "review",
+  "why": "ui top нэвтрэх vs web top login",
+  "collision": [],
+  "top": [
+   {
+    "surface": "нэвтрэх",
+    "ui": 0.45455,
+    "ui_cooc": 20,
+    "web": 0.08782,
+    "web_cooc": 141,
+    "tech": 13778,
+    "all": 135224,
+    "share": 0.10189019700644857,
+    "lift": 4.803035856567003,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "нэгдүгээр",
+    "ui": 0.17143,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 1434,
+    "all": 52015,
+    "share": 0.02756897048928194,
+    "lift": 1.2995828615414124,
+    "tag": "mined"
+   },
+   {
+    "surface": "login",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.14925,
+    "web_cooc": 30,
+    "tech": 51,
+    "all": 711,
+    "share": 0.07172995780590717,
+    "lift": 3.3813023181219855,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "нэвтр": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "login (comp.)",
+     "damage-feasant",
+     "enter",
+     "nip in"
+    ]
+   },
+   "нэгдү": {
+    "status": "flag",
+    "note": "first sense 'first-degree' non-technical",
+    "senses": [
+     "first-degree",
+     "first"
+    ]
+   },
+   "l:login": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Login Anonymously",
+     "Нэрээ нууцлан нэвтрэх"
+    ],
+    [
+     "created on login",
+     "нэвтрэлтийн үед үүсгэгдсэн"
+    ]
+   ],
+   "web": [
+    [
+     "Login with Vk ",
+     "Нэвтрэх Vk "
+    ],
+    [
+     "Campus Login ",
+     "Кампус-д нэвтрэх "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "logout",
+  "status": "unsure",
+  "official": "системээс гарах",
+  "dev": "системээс гарах",
+  "pick": null,
+  "decision": "review",
+  "why": "no data",
+  "collision": [],
+  "top": [
+   {
+    "surface": "системийг гарах",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 17,
+    "all": 27,
+    "share": 0.6296296296296297,
+    "lift": 29.68032034795965,
+    "tag": "rendering"
+   },
+   {
+    "surface": "гарах",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 4135,
+    "all": 107130,
+    "share": 0.03859796508914403,
+    "lift": 1.8194823031105447,
+    "tag": "mined"
+   },
+   {
+    "surface": "logout",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 4,
+    "all": 11,
+    "share": 0.36363636363636365,
+    "lift": 17.14157538812643,
+    "tag": "latin"
+   }
+  ],
+  "sense": {
+   "систе гарах": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "гарах": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "intervene",
+     "secession",
+     "recession",
+     "issue"
+    ]
+   },
+   "l:logout": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {}
+ },
+ {
+  "term": "password",
+  "status": "confirmed",
+  "official": "нууц үг",
+  "dev": "нууц үг",
+  "pick": "нууц",
+  "decision": "review",
+  "why": "sense flag: first sense 'secret' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "нууц",
+    "ui": 0.98225,
+    "ui_cooc": 83,
+    "web": 0.50178,
+    "web_cooc": 353,
+    "tech": 3765,
+    "all": 70757,
+    "share": 0.05321028308153257,
+    "lift": 2.5082972168805067,
+    "tag": "mined"
+   },
+   {
+    "surface": "нууц үг",
+    "ui": 0.64,
+    "ui_cooc": 40,
+    "web": 0.58017,
+    "web_cooc": 275,
+    "tech": 817,
+    "all": 9941,
+    "share": 0.0821848908560507,
+    "lift": 3.8741408815283225,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "үг",
+    "ui": 0.60294,
+    "ui_cooc": 41,
+    "web": 0.18473,
+    "web_cooc": 277,
+    "tech": 9028,
+    "all": 218527,
+    "share": 0.041312972767667155,
+    "lift": 1.9474659523125968,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "нууц": {
+    "status": "flag",
+    "note": "first sense 'secret' non-technical",
+    "senses": [
+     "secret",
+     "hoard",
+     "mystery",
+     "confidential"
+    ]
+   },
+   "нууц үг": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "password (comp.)",
+     "order-word",
+     "keyword",
+     "alarmword"
+    ]
+   },
+   "үг": {
+    "status": "flag",
+    "note": "first sense 'word' non-technical",
+    "senses": [
+     "word",
+     "speech",
+     "vocable",
+     "wording"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "New password:",
+     "Шинэ нууц үг:"
+    ],
+    [
+     "Old password:",
+     "Хуучин нууц үг:"
+    ]
+   ],
+   "web": [
+    [
+     "Password (twice): ",
+     "Нууц үг: "
+    ],
+    [
+     "Repeat password ✶ ",
+     "Нууц код ✶ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "username",
+  "status": "unsure",
+  "official": "хэрэглэгчийн нэр",
+  "dev": "хэрэглэгчийн нэр",
+  "pick": "хэрэглэгчийн нэр",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хэрэглэгчийн нэр",
+    "ui": 0.60952,
+    "ui_cooc": 32,
+    "web": 0.26484,
+    "web_cooc": 29,
+    "tech": 222,
+    "all": 6323,
+    "share": 0.03510991617902894,
+    "lift": 1.6550580063974671,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "хэрэглэгчийн нэрийг",
+    "ui": 0.2439,
+    "ui_cooc": 10,
+    "web": 0.12903,
+    "web_cooc": 6,
+    "tech": 27,
+    "all": 170,
+    "share": 0.1588235294117647,
+    "lift": 7.486835132755219,
+    "tag": "mined"
+   },
+   {
+    "surface": "хэрэглэгчийн нэрээ",
+    "ui": 0.10526,
+    "ui_cooc": 4,
+    "web": 0.08081,
+    "web_cooc": 4,
+    "tech": 29,
+    "all": 1259,
+    "share": 0.023034154090548053,
+    "lift": 1.085814644323338,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хэрэг нэр": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "user name (comp.)"
+    ]
+   },
+   "хэрэг нэрий": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хэрэг нэрээ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "What's your username?",
+     "Таны хэрэглэгчийн нэр юу вэ?"
+    ],
+    [
+     "Please enter a username.",
+     "Хэрэглэгчийн нэр оруулна уу."
+    ]
+   ],
+   "web": [
+    [
+     "Username or e-mail address * ",
+     "Хэрэглэгчийн нэр эсвэл э-мэйл хаяг * "
+    ],
+    [
+     "Put your Clash Royale username. ",
+     "таны дараах тавих Clash Royale хэрэглэгчийн нэр. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "user",
+  "status": "confirmed",
+  "official": "хэрэглэгч",
+  "dev": "хэрэглэгч",
+  "pick": "хэрэг",
+  "decision": "review",
+  "why": "sense flag: first sense 'affair' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хэрэг",
+    "ui": 0.63114,
+    "ui_cooc": 225,
+    "web": 0.15624,
+    "web_cooc": 1507,
+    "tech": 99806,
+    "all": 1397757,
+    "share": 0.07140440004950789,
+    "lift": 3.3659557428545894,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "энэ",
+    "ui": 0.21343,
+    "ui_cooc": 62,
+    "web": 0.05781,
+    "web_cooc": 526,
+    "tech": 77361,
+    "all": 1545691,
+    "share": 0.05004946007966663,
+    "lift": 2.359298130999232,
+    "tag": "mined"
+   },
+   {
+    "surface": "хэрэглэгчид онлайн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.22222,
+    "web_cooc": 244,
+    "tech": 118,
+    "all": 201,
+    "share": 0.5870646766169154,
+    "lift": 27.673836882821025,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хэрэг": {
+    "status": "flag",
+    "note": "first sense 'affair' non-technical",
+    "senses": [
+     "affair",
+     "fact",
+     "issue",
+     "matter"
+    ]
+   },
+   "энэ": {
+    "status": "flag",
+    "note": "first sense 'this' non-technical",
+    "senses": [
+     "this",
+     "that",
+     "here",
+     "instant"
+    ]
+   },
+   "хэрэг онлай": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "{{GENDER:$1|user}}",
+     "хэрэглэгч"
+    ],
+    [
+     "No user found.",
+     "Хэрэглэгч олдсонгүй."
+    ]
+   ],
+   "web": [
+    [
+     "User Content ",
+     "Хэрэглэгчийн контент "
+    ],
+    [
+     "0 Users Online ",
+     "0 хэрэглэгчид Онлайн "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "admin",
+  "status": "unsure",
+  "official": "администратор",
+  "dev": "admin",
+  "pick": "админ",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "админ",
+    "ui": 0.43243,
+    "ui_cooc": 8,
+    "web": 0.65069,
+    "web_cooc": 801,
+    "tech": 1379,
+    "all": 30169,
+    "share": 0.045709171666279955,
+    "lift": 2.1546998331274634,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "admin",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.17931,
+    "web_cooc": 104,
+    "tech": 70,
+    "all": 6158,
+    "share": 0.01136732705423839,
+    "lift": 0.5358482075697203,
+    "tag": "mined"
+   },
+   {
+    "surface": "он",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.11689,
+    "web_cooc": 136,
+    "tech": 3315,
+    "all": 112434,
+    "share": 0.02948396392550296,
+    "lift": 1.3898543735169748,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "админ": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "l:admin": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "он": {
+    "status": "flag",
+    "note": "first sense 'year' non-technical",
+    "senses": [
+     "year"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Blocking admin",
+     "Админыг блоклох"
+    ],
+    [
+     "Admin actions",
+     "Администраторын үйлдлүүд"
+    ]
+   ],
+   "web": [
+    [
+     "Author: admin ",
+     "Админ "
+    ],
+    [
+     "Author: admin ",
+     "админ _ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "account",
+  "status": "unsure",
+  "official": "хэрэглэгчийн бүртгэл",
+  "dev": "хэрэглэгчийн бүртгэл",
+  "pick": "бүртгэл",
+  "decision": "review",
+  "why": "ui top бүртгэл vs web top данс",
+  "collision": [],
+  "top": [
+   {
+    "surface": "бүртгэл",
+    "ui": 0.81139,
+    "ui_cooc": 114,
+    "web": 0.11099,
+    "web_cooc": 264,
+    "tech": 16492,
+    "all": 247991,
+    "share": 0.06650241339403445,
+    "lift": 3.1348793648870235,
+    "tag": "mined"
+   },
+   {
+    "surface": "данс",
+    "ui": 0.0625,
+    "ui_cooc": 4,
+    "web": 0.3546,
+    "web_cooc": 353,
+    "tech": 906,
+    "all": 16249,
+    "share": 0.05575727737091513,
+    "lift": 2.6283608270980983,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүсгэж",
+    "ui": 0.26852,
+    "ui_cooc": 29,
+    "web": 0.04101,
+    "web_cooc": 75,
+    "tech": 6186,
+    "all": 73446,
+    "share": 0.0842251450044931,
+    "lift": 3.970317099843596,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "бүртг": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "tab",
+     "registration (comp.)",
+     "check-up",
+     "record"
+    ]
+   },
+   "данс": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "account",
+     "list",
+     "bill",
+     "schedule"
+    ]
+   },
+   "үүсгэ": {
+    "status": "flag",
+    "note": "first sense 'creating' non-technical",
+    "senses": [
+     "creating"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Create account",
+     "Бүртгүүлэх"
+    ],
+    [
+     "Create an account",
+     "Бүртгүүлэх"
+    ]
+   ],
+   "web": [
+    [
+     "(by all accounts) ",
+     "(бүх бүртгэлээр) "
+    ],
+    [
+     "Create / Access Account ",
+     "Акаунт / бүртгэл үүсгэх "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "dashboard",
+  "status": "unsure",
+  "official": "нэгдсэн хяналтын дэлгэц",
+  "dev": "dashboard",
+  "pick": "хянах самбар",
+  "decision": "review",
+  "why": "ui top хянах самбар vs web top дашборд",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хянах самбар",
+    "ui": 0.90909,
+    "ui_cooc": 5,
+    "web": 0.09091,
+    "web_cooc": 5,
+    "tech": 76,
+    "all": 379,
+    "share": 0.20052770448548812,
+    "lift": 9.452742100576316,
+    "tag": "mined"
+   },
+   {
+    "surface": "дашборд",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.49645,
+    "web_cooc": 35,
+    "tech": 3,
+    "all": 12,
+    "share": 0.25,
+    "lift": 11.78483307933692,
+    "tag": "mined"
+   },
+   {
+    "surface": "хяналтын самбар",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.14815,
+    "web_cooc": 10,
+    "tech": 70,
+    "all": 212,
+    "share": 0.330188679245283,
+    "lift": 15.564873878369516,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хянах самба": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "control panel",
+     "instrumental panel (auto.)",
+     "Dash board (tech.)",
+     "fascia panel, instrument panel (tech.)"
+    ]
+   },
+   "дашбо": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хянал самба": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "dashboard (auto.)",
+     "dash panel (auto.)",
+     "dash (tech.)",
+     "instrument panel (eng.)"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Preferred Dashboard",
+     "Үндсэн хянах самбар"
+    ],
+    [
+     "Creator Dashboard",
+     "Зохиочгийн хянах самбар"
+    ]
+   ],
+   "web": [
+    [
+     "Parrot’s Asteroid app platform lands in Volvo dashboards ",
+     "Volvo Хянах самбар нь тоть-ын солир програм тавцан газар "
+    ],
+    [
+     "The 1991 model was available with a \"Final Edition\" badge on the dashboard. ",
+     "1991 оны загвар хянах самбартаа \"Final Edition\" гэсэн тэмдэгтэй байв. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "settings",
+  "status": "confirmed",
+  "official": "тохиргоо",
+  "dev": "тохиргоо",
+  "pick": "тохиргоо",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "тохиргоо",
+    "ui": 0.41667,
+    "ui_cooc": 30,
+    "web": 0.13845,
+    "web_cooc": 395,
+    "tech": 9594,
+    "all": 114583,
+    "share": 0.08372969812275817,
+    "lift": 3.9469620646398993,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "хамгаалалтын түвшинг",
+    "ui": 0.40816,
+    "ui_cooc": 10,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 21,
+    "all": 58,
+    "share": 0.3620689655172414,
+    "lift": 17.067689287315538,
+    "tag": "mined"
+   },
+   {
+    "surface": "түвшинг өөрчилж",
+    "ui": 0.23256,
+    "ui_cooc": 5,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 1,
+    "all": 17,
+    "share": 0.058823529411764705,
+    "lift": 2.7729019010204516,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "тохир": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "settings (comp.)",
+     "adjustment",
+     "configuration (comp.)",
+     "Adjusting (tech.)"
+    ]
+   },
+   "хамга түвши": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "түвши өөрчи": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Pad-wide Settings",
+     "Падын тохиргоо"
+    ],
+    [
+     "Device settings description",
+     "Төхөөрөмжийн тохиргооны тайлбар"
+    ]
+   ],
+   "web": [
+    [
+     "Settings of hotkeys ",
+     "Hotkeys тохиргоонууд "
+    ],
+    [
+     "4、 Setting itself ",
+     "4, өөрийгөө тохируулах нь "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "notification",
+  "status": "confirmed",
+  "official": "мэдэгдэл",
+  "dev": "мэдэгдэл",
+  "pick": "хүлээн авах болно",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хүлээн авах болно",
+    "ui": 0.54545,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 78,
+    "all": 1032,
+    "share": 0.0755813953488372,
+    "lift": 3.562856512357673,
+    "tag": "mined"
+   },
+   {
+    "surface": "сэтгэгдэл программийн тухайд",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.3431,
+    "web_cooc": 41,
+    "tech": 0,
+    "all": 18,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "хайлт сэтгэгдэл программийн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.3431,
+    "web_cooc": 41,
+    "tech": 0,
+    "all": 18,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хүлээ авах болно": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "сэтгэ прогр тухай": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хайлт сэтгэ прогр": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "{{GENDER:$1|You}} will receive notifications on all activities on this topic.",
+     "Энэ сэдвийн дагуух бүх үйл явдлын тоймыг хүлээх авах болно."
+    ],
+    [
+     "{{GENDER:$1|You}} will get a notification when a new topic is created on this board.",
+     "Энэ самбарт шинээр үүссэн бүх сэдвийг автоматаар хүлээн авах болно."
+    ]
+   ],
+   "web": []
+  }
+ },
+ {
+  "term": "app/application",
+  "status": "confirmed",
+  "official": "аппликэйшн",
+  "dev": "апп",
+  "pick": "програм",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "програм",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.25888,
+    "web_cooc": 1239,
+    "tech": 31513,
+    "all": 62696,
+    "share": 0.5026317468419038,
+    "lift": 23.693724947629473,
+    "tag": "mined"
+   },
+   {
+    "surface": "app",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.17604,
+    "web_cooc": 377,
+    "tech": 576,
+    "all": 1834,
+    "share": 0.31406761177753545,
+    "lift": 14.804937521696981,
+    "tag": "mined"
+   },
+   {
+    "surface": "апп",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.16648,
+    "web_cooc": 362,
+    "tech": 2118,
+    "all": 6242,
+    "share": 0.3393143223325857,
+    "lift": 15.995050600471384,
+    "tag": "mined+rendering"
+   }
+  ],
+  "sense": {
+   "прогр": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "l:app": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "апп": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Add or remove applications from the main menu",
+     "Үндсэн цэсэнд ямар програмууд харагдахыг өөрчлөх"
+    ],
+    [
+     "Add or remove applications from the main menu",
+     "Үндсэн цэсэнд ямар програмууд харагдахыг өөрчлөх"
+    ]
+   ],
+   "web": [
+    [
+     "1. Application ",
+     "1. Програмын "
+    ],
+    [
+     "3、 Application ",
+     "3, Програмын "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "website",
+  "status": "confirmed",
+  "official": "вэб сайт",
+  "dev": "вэб сайт",
+  "pick": "вэб",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "вэб",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.4334,
+    "web_cooc": 1604,
+    "tech": 11691,
+    "all": 52134,
+    "share": 0.2242490505236506,
+    "lift": 10.570950514484055,
+    "tag": "mined"
+   },
+   {
+    "surface": "вэб сайт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.41602,
+    "web_cooc": 1205,
+    "tech": 2247,
+    "all": 21023,
+    "share": 0.10688293773486182,
+    "lift": 5.038390320938031,
+    "tag": "rendering"
+   },
+   {
+    "surface": "сайт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.3735,
+    "web_cooc": 1322,
+    "tech": 25478,
+    "all": 90270,
+    "share": 0.2822421624016838,
+    "lift": 13.304707087419786,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "вэб": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "вэб сайт": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "Web site (comp.)"
+    ]
+   },
+   "сайт": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "site (comp.)"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "The following files exist but are not embedded in any page. Please note that other websites may link to a file with a direct URL, and so may still be listed here despite being in active use.",
+     "Дараах файлууд нь байгаа ч гэсэн ямар ч хуудсанд эмбэдлэгдээгүй байна. Бусад вэб хуудаснуудаас зураг руу шууд URL-р нь холбогдож болох учраас идэвхтэй хэрэглэгдэж буй эсэхээс үл хамааран энд жагсагдсан байж болно гэдгийг анхаарна уу.</p>"
+    ],
+    [
+     "Websites that accept postings from the public, like this wiki, are often abused by spammers who use automated tools to post their links to many sites. While these spam links can be removed, they are a significant nuisance.  Sometimes, especially when adding new web links to a page, the wiki may show you an image of colored or distorted text and ask you to type the words shown. Since this is a task that's hard to automate, it will allow most real humans to make their posts while stopping most spammers and other robotic attackers.  Unfortunately, this may inconvenience users with limited vision or those using text-based or speech-based browsers. At the moment, we do not have an audio alternative available. Please contact the [[{{int:grouppage-sysop}}|site administrators]] for assistance if this is unexpectedly preventing you from making legitimate actions.  Hit the \"back\" button in your browser to return to the page editor.",
+     "Энэ вики шиг хүссэн хүн болгон засварлах боломжтой вэбсайтуудад спаммерууд янз бүрийн сайтын холбоосыг автоматаар олноор нь оруулдаг. Эдгээр спам холбоосуудыг устгах боломжтой ч маш их төвөг учирдаг.  Заримдаа, ялангуяа шинэ вэб холбоосууд оруулж байх үед, вики нь өнгөт буюу мушгирсан бичиг гаргаж таныг энэ бичгийг шивж оруул гэдэг. Энэ үйлдлийг автоматаар хийх нь хэцүү учраас жинхэнэ хүмүүс өөрсдийн засваруудыг оруулах боломж олгодог ч спаммерүүд болоод автомат халдлага үйлдэгчдийг зогсоож байдаг.  Харамсалтай нь хараа муутай буюу бичигт эсвэл ярианд тулгуурласан вэб хөтөч ашигладаг хэрэглэгчдэд хүндрэл учирна. Одоогийн байдлаар дуун сонголт алга байна. Таньд бодит засвар хийхэд хүндрэл учирч байвал [[{{int:grouppage-sysop}}|сайтын администраторуудаас]] тусламж авч холбогдоно уу.  Хуудасны засварлагч руу буцахын тулд вэб хөтөчийнхөө \"буцаах\" товч дээр дарна уу."
+    ]
+   ],
+   "web": [
+    [
+     "Share website ",
+     "вэб сайт "
+    ],
+    [
+     "Visit website ",
+     "вэб сайт "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "browser",
+  "status": "unsure",
+  "official": "браузер",
+  "dev": "браузер",
+  "pick": "хөтөч",
+  "decision": "review",
+  "why": "ui top броузер vs web top хөтөч",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хөтөч",
+    "ui": 0.2963,
+    "ui_cooc": 4,
+    "web": 0.25517,
+    "web_cooc": 148,
+    "tech": 1237,
+    "all": 8834,
+    "share": 0.1400271677609237,
+    "lift": 6.600787194539175,
+    "tag": "mined"
+   },
+   {
+    "surface": "броузер",
+    "ui": 0.46154,
+    "ui_cooc": 6,
+    "web": 0.02128,
+    "web_cooc": 5,
+    "tech": 79,
+    "all": 144,
+    "share": 0.5486111111111112,
+    "lift": 25.86116147965602,
+    "tag": "mined"
+   },
+   {
+    "surface": "хөтчийн",
+    "ui": 0.30769,
+    "ui_cooc": 4,
+    "web": 0.16998,
+    "web_cooc": 47,
+    "tech": 246,
+    "all": 703,
+    "share": 0.34992887624466573,
+    "lift": 16.495413584733328,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хөтөч": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "batman (milit.)",
+     "browser (comp.)",
+     "escort",
+     "cart-man"
+    ]
+   },
+   "броуз": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хөтчи": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "You will need to have cookies enabled in your browser for this to work.",
+     "Үүнийг ажиллуулахын тулд та вэб хөтөчийнхөө күүкиг идэвхижүүлэх хэрэгтэй."
+    ],
+    [
+     "Someone, probably you, from IP address $1, has changed the email address of the account \"$2\" to this address on {{SITENAME}}.  To confirm that this account really does belong to you and reactivate email features on {{SITENAME}}, open this link in your browser:  $3  If the account does *not* belong to you, follow this link to cancel the email address confirmation:  $5  This confirmation code will expire at $4.",
+     "Хэн нэгэн, магадгүй та $1 IP хаягнаас {{SITENAME}} дээрх \"$2\" бүртгэлийн и-мэйл хаягийг сольсон байна.  Энэ хэрэглэгчийн бүртгэл нь үнэхээр таных мөн бол {{SITENAME}} хуудас дээрх и-мэйл функцуудыг дахин идэвхжүүлэхийн тулд дараах холбоосыг хөтөчөөрөө нээнэ үү:  $3  Хэрэв бүртгэл таных *биш* бол и-мэйл баталгаажуулалтыг цуцлах дараах холбоосыг нээнэ үү:  $5  Баталгаажуулах кодны хугацаа $4-нд дуусах болно."
+    ]
+   ],
+   "web": [
+    [
+     "Web browsers – Windows ",
+     "Вэб хөтөч – Windows "
+    ],
+    [
+     "Opera browser with VPN. ",
+     "VPN нь Opera хөтөч. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "link",
+  "status": "unsure",
+  "official": "холбоос",
+  "dev": "линк",
+  "pick": "холбоо",
+  "decision": "review",
+  "why": "ui top холбоо vs web top link",
+  "collision": [],
+  "top": [
+   {
+    "surface": "холбоо",
+    "ui": 0.68571,
+    "ui_cooc": 72,
+    "web": 0.08566,
+    "web_cooc": 650,
+    "tech": 46224,
+    "all": 912928,
+    "share": 0.0506326895439728,
+    "lift": 2.3867911785344287,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "link",
+    "ui": 0.06667,
+    "ui_cooc": 3,
+    "web": 0.15939,
+    "web_cooc": 115,
+    "tech": 91,
+    "all": 628,
+    "share": 0.1449044585987261,
+    "lift": 6.830699428150698,
+    "tag": "mined"
+   },
+   {
+    "surface": "линк",
+    "ui": 0.14894,
+    "ui_cooc": 7,
+    "web": 0.07365,
+    "web_cooc": 51,
+    "tech": 397,
+    "all": 2151,
+    "share": 0.18456531845653185,
+    "lift": 8.700285880979557,
+    "tag": "mined+rendering"
+   }
+  ],
+  "sense": {
+   "холбо": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "contact (comm.)",
+     "association",
+     "union",
+     "signal"
+    ]
+   },
+   "l:link": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "линк": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "External link",
+     "Гадны холбоос"
+    ],
+    [
+     "Permanent link",
+     "Байнгын холбоос"
+    ]
+   ],
+   "web": [
+    [
+     "linking machine ",
+     "холбох машин "
+    ],
+    [
+     "Web Links : 6 ",
+     "Вэб холбоос : 6 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "file",
+  "status": "confirmed",
+  "official": "файл",
+  "dev": "файл",
+  "pick": "файл",
+  "decision": "review",
+  "why": "ui top файлын vs web top файлууд",
+  "collision": [],
+  "top": [
+   {
+    "surface": "файл",
+    "ui": 0.54321,
+    "ui_cooc": 110,
+    "web": 0.3849,
+    "web_cooc": 525,
+    "tech": 2625,
+    "all": 5527,
+    "share": 0.47494119775646826,
+    "lift": 22.388410952241298,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "файлын",
+    "ui": 0.61538,
+    "ui_cooc": 132,
+    "web": 0.31101,
+    "web_cooc": 411,
+    "tech": 1772,
+    "all": 3841,
+    "share": 0.46133819317885966,
+    "lift": 21.747174398943006,
+    "tag": "mined"
+   },
+   {
+    "surface": "файлууд",
+    "ui": 0.18065,
+    "ui_cooc": 28,
+    "web": 0.41389,
+    "web_cooc": 584,
+    "tech": 1786,
+    "all": 3437,
+    "share": 0.5196392202502182,
+    "lift": 24.49544588850246,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "файл": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "file (comp.)"
+    ]
+   },
+   "файлы": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "файлу": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Original file",
+     "Эх файл"
+    ],
+    [
+     "Uploaded files",
+     "Оруулсан файл"
+    ]
+   ],
+   "web": [
+    [
+     "Files File(s) ",
+     "Файл(ы) "
+    ],
+    [
+     "File Manager ",
+     "файл менежер "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "folder",
+  "status": "unsure",
+  "official": "хавтас",
+  "dev": "хавтас",
+  "pick": "фолдер",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "фолдер",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.30962,
+    "web_cooc": 37,
+    "tech": 158,
+    "all": 241,
+    "share": 0.6556016597510373,
+    "lift": 30.90462450680885,
+    "tag": "mined"
+   },
+   {
+    "surface": "хавтсыг",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.30126,
+    "web_cooc": 36,
+    "tech": 159,
+    "all": 675,
+    "share": 0.23555555555555555,
+    "lift": 11.103931612530786,
+    "tag": "mined"
+   },
+   {
+    "surface": "folder",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.23176,
+    "web_cooc": 27,
+    "tech": 43,
+    "all": 128,
+    "share": 0.3359375,
+    "lift": 15.835869450358986,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "фолде": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хавтс": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "l:folder": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "2) Delete the sound folder in the 737-8K2 KLM ",
+     "1) Boeing 737-8K2 KLM фолдерыг нээ "
+    ],
+    [
+     "Thunderbird 3 Error Copying To Sent Folder ",
+     "Thunderbird 3-ыг фолдер илгээж хуулбарлав "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "cloud",
+  "status": "confirmed",
+  "official": "үүлэн технологи",
+  "dev": "үүлэн технологи",
+  "pick": "cloud",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "cloud",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.45018,
+    "web_cooc": 183,
+    "tech": 262,
+    "all": 585,
+    "share": 0.4478632478632479,
+    "lift": 21.111974473752294,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүл",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.35657,
+    "web_cooc": 133,
+    "tech": 275,
+    "all": 12481,
+    "share": 0.02203349090617739,
+    "lift": 1.038644049937554,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүлэн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.13538,
+    "web_cooc": 44,
+    "tech": 571,
+    "all": 3175,
+    "share": 0.17984251968503936,
+    "lift": 8.477656300222211,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "l:cloud": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "үүл": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "cloud",
+     "weft",
+     "nebule",
+     "overcast"
+    ]
+   },
+   "үүлэн": {
+    "status": "flag",
+    "note": "first sense 'nubiferous' non-technical",
+    "senses": [
+     "nubiferous",
+     "cloudlike"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "LERS AMR Cloud ",
+     "ЛЭРС Cloud "
+    ],
+    [
+     "Server Cloud ",
+     "Сервер Cloud "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "network",
+  "status": "confirmed",
+  "official": "сүлжээ",
+  "dev": "сүлжээ",
+  "pick": "сүлжээ",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "сүлжээ",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.62765,
+    "web_cooc": 1346,
+    "tech": 14455,
+    "all": 102194,
+    "share": 0.14144666027359729,
+    "lift": 6.667701123816083,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "network",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.1033,
+    "web_cooc": 111,
+    "tech": 351,
+    "all": 1205,
+    "share": 0.29128630705394193,
+    "lift": 13.731042027708744,
+    "tag": "mined"
+   },
+   {
+    "surface": "нийгмийн",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0713,
+    "web_cooc": 115,
+    "tech": 9441,
+    "all": 229047,
+    "share": 0.04121861452016398,
+    "lift": 1.9430179675266623,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "сүлжэ": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "network (comp.)",
+     "web",
+     "swift",
+     "plexus"
+    ]
+   },
+   "l:network": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "нийгм": {
+    "status": "flag",
+    "note": "first sense 'social' non-technical",
+    "senses": [
+     "social",
+     "societal",
+     "civil",
+     "civic"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Unable to log in - network failure",
+     "Нэвтрэхэд алдаа - сүлжээ"
+    ]
+   ],
+   "web": [
+    [
+     "Tag: network ",
+     "Tag: сүлжээ "
+    ],
+    [
+     "FTTX networks ",
+     "FTTX сүлжээ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "connection",
+  "status": "unsure",
+  "official": "холболт",
+  "dev": "холболт",
+  "pick": "интернэт холболт",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "интернэт холболт",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.12997,
+    "web_cooc": 49,
+    "tech": 1365,
+    "all": 2376,
+    "share": 0.5744949494949495,
+    "lift": 27.081308338880294,
+    "tag": "mined"
+   },
+   {
+    "surface": "холбоо",
+    "ui": 0.0,
+    "ui_cooc": 2,
+    "web": 0.05981,
+    "web_cooc": 432,
+    "tech": 46224,
+    "all": 912928,
+    "share": 0.0506326895439728,
+    "lift": 2.3867911785344287,
+    "tag": "rendering"
+   },
+   {
+    "surface": "connection",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.05351,
+    "web_cooc": 16,
+    "tech": 21,
+    "all": 164,
+    "share": 0.12804878048780488,
+    "lift": 6.0361340162457395,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "интер холбо": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "холбо": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "contact (comm.)",
+     "association",
+     "union",
+     "signal"
+    ]
+   },
+   "l:connection": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "No internet connection available.",
+     "Интернэт холболт байхгүй байна."
+    ]
+   ],
+   "web": [
+    [
+     "1. Internet connection faster than 256Kbps ",
+     "256Кbps -ээс дээш хурдтай интернет холболттой байх. "
+    ],
+    [
+     "– View the logs (old logs) without internet connection. ",
+     "– Бүртгэлийг харах (Хуучин лог) интернет холболтгүйгээр. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "timeout",
+  "status": "unsure",
+  "official": "хугацаа хэтрэх",
+  "dev": "timeout",
+  "pick": "таймаш",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "таймаш",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.5,
+    "web_cooc": 4,
+    "tech": 0,
+    "all": 20,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "явцад хугацаа дуусав",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "хүлээх явцад хугацаа",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "тайма": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "явцад хугац дууса": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "хүлээ явцад хугац": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Libximc library timeouts ",
+     "Таймауты libximc "
+    ],
+    [
+     "6.4. Libximc library timeouts¶ ",
+     "6.4. Таймауты libximc¶ "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "error",
+  "status": "confirmed",
+  "official": "алдаа",
+  "dev": "алдаа",
+  "pick": "алдаа",
+  "decision": "review",
+  "why": "collision with bug",
+  "collision": [
+   "bug"
+  ],
+  "top": [
+   {
+    "surface": "алдаа",
+    "ui": 0.77457,
+    "ui_cooc": 67,
+    "web": 0.52116,
+    "web_cooc": 351,
+    "tech": 4490,
+    "all": 54529,
+    "share": 0.08234150635441692,
+    "lift": 3.881523631551855,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "гарлаа",
+    "ui": 0.42,
+    "ui_cooc": 21,
+    "web": 0.02198,
+    "web_cooc": 6,
+    "tech": 399,
+    "all": 18538,
+    "share": 0.021523357427985758,
+    "lift": 1.0145966983828743,
+    "tag": "mined"
+   },
+   {
+    "surface": "гарав",
+    "ui": 0.23256,
+    "ui_cooc": 10,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 116,
+    "all": 4015,
+    "share": 0.028891656288916562,
+    "lift": 1.3619333870018258,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "алдаа": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "error",
+     "mistake",
+     "fault",
+     "break"
+    ]
+   },
+   "гарла": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "гарав": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Internal error",
+     "Дотоод алдаа"
+    ],
+    [
+     "Lua error: $2.",
+     "Lua алдаа: $2."
+    ]
+   ],
+   "web": [
+    [
+     "Ps Port Error ",
+     "Ps портын алдаа "
+    ],
+    [
+     "Ssdp Error 1068 ",
+     "Rpc 1068 алдаа "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "crash",
+  "status": "unsure",
+  "official": "ажиллахаа зогсох",
+  "dev": "crash",
+  "pick": "сүйрэл",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "сүйрэл",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.36011,
+    "web_cooc": 65,
+    "tech": 253,
+    "all": 4050,
+    "share": 0.062469135802469135,
+    "lift": 2.9447533521701144,
+    "tag": "mined"
+   },
+   {
+    "surface": "гацсан",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.20847,
+    "web_cooc": 32,
+    "tech": 76,
+    "all": 1429,
+    "share": 0.05318404478656403,
+    "lift": 2.507060361174544,
+    "tag": "mined"
+   },
+   {
+    "surface": "үнийн өсөлт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.17143,
+    "web_cooc": 24,
+    "tech": 67,
+    "all": 3907,
+    "share": 0.01714870744816995,
+    "lift": 0.8083786192122586,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "сүйрэ": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "catastrophe",
+     "defeat",
+     "disaster",
+     "grave"
+    ]
+   },
+   "гацса": {
+    "status": "flag",
+    "note": "first sense 'strikebound' non-technical",
+    "senses": [
+     "strikebound",
+     "faltering"
+    ]
+   },
+   "үнийн өсөлт": {
+    "status": "flag",
+    "note": "first sense 'bull movement' non-technical",
+    "senses": [
+     "bull movement (comm.)",
+     "inflation",
+     "improvement",
+     "appreciation (finan.)"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "ben 10 crash cars ",
+     "Бен 10 Сүйрэл машин "
+    ],
+    [
+     "ben 10 crash cars ben 10 crash cars ",
+     "Бен 10 Сүйрэл машин "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "reboot/restart",
+  "status": "unsure",
+  "official": "дахин ачаалах",
+  "dev": "дахин ачаалах",
+  "pick": "дахих",
+  "decision": "review",
+  "why": "ui top дахих vs web top дахин эхлүүлэх",
+  "collision": [],
+  "top": [
+   {
+    "surface": "дахих",
+    "ui": 0.56,
+    "ui_cooc": 7,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 8,
+    "all": 161,
+    "share": 0.049689440993788817,
+    "lift": 2.3423270716694495,
+    "tag": "mined"
+   },
+   {
+    "surface": "тоглоом дахиж эхлэх",
+    "ui": 0.48485,
+    "ui_cooc": 8,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "дахин эхлүүлэх",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.41905,
+    "web_cooc": 22,
+    "tech": 68,
+    "all": 437,
+    "share": 0.15560640732265446,
+    "lift": 7.335182145491172,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "дахих": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "renewal",
+     "restate",
+     "repeat",
+     "relapse"
+    ]
+   },
+   "тогло дахиж эхлэх": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "дахин эхлүү": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "restart"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": []
+  }
+ },
+ {
+  "term": "cache",
+  "status": "unsure",
+  "official": "кэш",
+  "dev": "cache",
+  "pick": "хийсвэр санах ойг",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хийсвэр санах ойг",
+    "ui": 0.6,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "кэш",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.4625,
+    "web_cooc": 37,
+    "tech": 35,
+    "all": 138,
+    "share": 0.2536231884057971,
+    "lift": 11.95562776164615,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "cache",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.38235,
+    "web_cooc": 26,
+    "tech": 127,
+    "all": 218,
+    "share": 0.5825688073394495,
+    "lift": 27.461904606895203,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хийсв санах ойг": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "кэш": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "cache (comp.)"
+    ]
+   },
+   "l:cache": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Purge the cache for a page",
+     "Баталгаажуулахгүйгээр сайтын хийсвэр санах ойг цэвэрлэх"
+    ],
+    [
+     "Purging a page clears the cache and forces the most current revision to appear.",
+     "Хийсвэр санах ойг цэвэрлэснээр хамгийн сүүлийн засвар харагдахад хүргэнэ."
+    ]
+   ],
+   "web": []
+  }
+ },
+ {
+  "term": "API",
+  "status": "unsure",
+  "official": "API",
+  "dev": "API",
+  "pick": "api",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "api",
+    "ui": 1.0,
+    "ui_cooc": 6,
+    "web": 0.79146,
+    "web_cooc": 241,
+    "tech": 229,
+    "all": 1428,
+    "share": 0.16036414565826332,
+    "lift": 7.5594587539724225,
+    "tag": "mined"
+   },
+   {
+    "surface": "болон хяналт шалгалтын",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.06647,
+    "web_cooc": 11,
+    "tech": 10,
+    "all": 125,
+    "share": 0.08,
+    "lift": 3.771146585387814,
+    "tag": "mined"
+   },
+   {
+    "surface": "шугам хоолой",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.05789,
+    "web_cooc": 11,
+    "tech": 117,
+    "all": 1357,
+    "share": 0.08621960206337509,
+    "lift": 4.064334473934914,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "l:api": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "болон хянал шалга": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "шугам хооло": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Use higher limits in API queries",
+     "API-н хайлтад илүү өндөр хязгаарыг хэрэглэх"
+    ],
+    [
+     "Pageviews API does not contain data older than $1, using earliest available data instead.",
+     "Уучлаарай, Pageviews-API нь $1-с хуучин мэдээлэл хадгалаагүй байна."
+    ]
+   ],
+   "web": [
+    [
+     "Click API Client ",
+     "API Токен "
+    ],
+    [
+     "Issued By:API ",
+     "Стандарт:API "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "token",
+  "status": "confirmed",
+  "official": "токен",
+  "dev": "токен",
+  "pick": "токен",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "токен",
+    "ui": 0.92308,
+    "ui_cooc": 6,
+    "web": 0.45033,
+    "web_cooc": 68,
+    "tech": 44,
+    "all": 201,
+    "share": 0.21890547263681592,
+    "lift": 10.319057820712924,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "ресет",
+    "ui": 0.61538,
+    "ui_cooc": 4,
+    "web": 0.0,
+    "web_cooc": 0,
+    "tech": 2,
+    "all": 16,
+    "share": 0.125,
+    "lift": 5.89241653966846,
+    "tag": "mined"
+   },
+   {
+    "surface": "жетон",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.33071,
+    "web_cooc": 42,
+    "tech": 58,
+    "all": 145,
+    "share": 0.4,
+    "lift": 18.855732926939073,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "токен": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "token (comp.)"
+    ]
+   },
+   "ресет": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "жетон": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "token",
+     "slug",
+     "counter"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Tokens reset.",
+     "Токен ресет хийлээ."
+    ],
+    [
+     "Reset selected tokens",
+     "Сонгосон токеныг ресет хийх"
+    ]
+   ],
+   "web": [
+    [
+     "Token Ticker ",
+     "Токен Тикер "
+    ],
+    [
+     "token Singapore ",
+     "токен Сингапур "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "session",
+  "status": "unsure",
+  "official": "нэвтрэлт",
+  "dev": "session",
+  "pick": "мэдээлэл алдагдав",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "мэдээлэл алдагдав",
+    "ui": 0.42857,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 1,
+    "tech": 113,
+    "all": 476,
+    "share": 0.23739495798319327,
+    "lift": 11.190639814832537,
+    "tag": "mined"
+   },
+   {
+    "surface": "уучлаарай",
+    "ui": 0.3,
+    "ui_cooc": 3,
+    "web": 0.0,
+    "web_cooc": 1,
+    "tech": 350,
+    "all": 24382,
+    "share": 0.014354851939955705,
+    "lift": 0.676678135963895,
+    "tag": "mined"
+   },
+   {
+    "surface": "хурал",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.08782,
+    "web_cooc": 53,
+    "tech": 3744,
+    "all": 297317,
+    "share": 0.012592619998183757,
+    "lift": 0.5936076988404623,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "мэдээ алдаг": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "уучла": {
+    "status": "flag",
+    "note": "first sense 'sorry' non-technical",
+    "senses": [
+     "sorry"
+    ]
+   },
+   "хурал": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "convention",
+     "meeting",
+     "rally",
+     "conference"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Loss of session data.  You might have been logged out. '''Please verify that you're still logged in and try again'''. If it still does not work, try [[Special:UserLogout|logging out]] and logging back in, and check that your browser allows cookies from this site.",
+     "Үйлдлийн үеэр мэдээлэл алдагдав. Дахин оролдоно уу."
+    ],
+    [
+     "Sorry! We could not process your edit due to a loss of session data.  You might have been logged out. <strong>Please verify that you're still logged in and try again</strong>. If it still does not work, try [[Special:UserLogout|logging out]] and logging back in, and check that your browser allows cookies from this site.",
+     "'''Уучлаарай! Мэдээлэл алдагдснаас болж таны засварыг боловсруулж чадсангүй. Дахин оролдож үзнэ үү. Ингээд ч болохгүй байвал сайтаас гарч дахин нэвтэрч орж үзнэ үү.'''"
+    ]
+   ],
+   "web": [
+    [
+     "'session_fail_preview_html' => \"<strong>Sorry! We could not process your edit due to a loss of session data.</strong> ",
+     "'session_fail_preview_html' => '<strong>Уучлаарай! Мэдээлэл алдагдснаас болж таны засварыг боловсруулж чадсангүй.</strong> "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "access/permission",
+  "status": "confirmed",
+  "official": "хандалт",
+  "dev": "хандалт",
+  "pick": "хандах",
+  "decision": "review",
+  "why": "ui top эрх vs web top хандах",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хандах",
+    "ui": 0.32836,
+    "ui_cooc": 11,
+    "web": 0.40076,
+    "web_cooc": 528,
+    "tech": 5288,
+    "all": 83921,
+    "share": 0.06301164190131195,
+    "lift": 2.9703267274476532,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "зөвшөөрч",
+    "ui": 0.40426,
+    "ui_cooc": 19,
+    "web": 0.09642,
+    "web_cooc": 179,
+    "tech": 7177,
+    "all": 163311,
+    "share": 0.043946825382246146,
+    "lift": 2.071624005986151,
+    "tag": "mined"
+   },
+   {
+    "surface": "эрх",
+    "ui": 0.42667,
+    "ui_cooc": 16,
+    "web": 0.0205,
+    "web_cooc": 57,
+    "tech": 13819,
+    "all": 462940,
+    "share": 0.029850520585821057,
+    "lift": 1.4071336097408467,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "ханда": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "advert",
+     "treat",
+     "address",
+     "approach"
+    ]
+   },
+   "зөвшө": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "эрх": {
+    "status": "flag",
+    "note": "first sense 'just' non-technical",
+    "senses": [
+     "just",
+     "right",
+     "privilege",
+     "cessionary (comm.)"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Access denied",
+     "Хандах эрхгүй байна"
+    ],
+    [
+     "Project Access Level",
+     "Төслийн хандалтын түвшин"
+    ]
+   ],
+   "web": [
+    [
+     "Access No. 77382 ",
+     "Хандалт: 64557 "
+    ],
+    [
+     "Access No. 77383 ",
+     "Хандалт: 64556 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "role",
+  "status": "unsure",
+  "official": "эрхийн түвшин",
+  "dev": "role",
+  "pick": "үүрэг",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "үүрэг",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.28181,
+    "web_cooc": 206,
+    "tech": 4557,
+    "all": 137245,
+    "share": 0.03320339538781012,
+    "lift": 1.5651858892502706,
+    "tag": "mined"
+   },
+   {
+    "surface": "үүргийг",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.08981,
+    "web_cooc": 26,
+    "tech": 1226,
+    "all": 36213,
+    "share": 0.03385524535387844,
+    "lift": 1.5959136614218168,
+    "tag": "mined"
+   },
+   {
+    "surface": "гүйцэтгэх",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.08372,
+    "web_cooc": 117,
+    "tech": 8713,
+    "all": 192853,
+    "share": 0.045179489040875695,
+    "lift": 2.129730947825807,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "үүрэг": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "function (comp.)",
+     "commitment",
+     "duty",
+     "role"
+    ]
+   },
+   "үүрги": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "гүйцэ": {
+    "status": "pass",
+    "note": "tech tag",
+    "senses": [
+     "execute (comp.)",
+     "perform",
+     "carry (comm.)",
+     "carry out"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Windows Kernel role ",
+     "Windows холбоотой үүрэг хариуцлага "
+    ],
+    [
+     "Japanese and a role-reversal sex ",
+     "Япон, үүрэг-буцаах секс "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "encryption",
+  "status": "unsure",
+  "official": "шифрлэлт",
+  "dev": "шифрлэлт",
+  "pick": "шифрлэх",
+  "decision": "review",
+  "why": "sense flag: first sense 'encrypt' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "шифрлэх",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.56069,
+    "web_cooc": 97,
+    "tech": 545,
+    "all": 1086,
+    "share": 0.501841620626151,
+    "lift": 23.656478925372454,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "бүх байршуулалт болон",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.26829,
+    "web_cooc": 22,
+    "tech": 0,
+    "all": 0,
+    "share": 0.0,
+    "lift": 0.0,
+    "tag": "mined"
+   },
+   {
+    "surface": "encryption",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.25455,
+    "web_cooc": 21,
+    "tech": 17,
+    "all": 44,
+    "share": 0.38636363636363635,
+    "lift": 18.21292384988433,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "шифрл": {
+    "status": "flag",
+    "note": "first sense 'encrypt' non-technical",
+    "senses": [
+     "encrypt",
+     "encoding",
+     "encipher",
+     "code"
+    ]
+   },
+   "бүх байрш болон": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "l:encryption": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "SSL encryption ",
+     "SSL шифрлэлт "
+    ],
+    [
+     "Text encryption ",
+     "Шифрлэх текст "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "firewall",
+  "status": "confirmed",
+  "official": "галт хана",
+  "dev": "галт хана",
+  "pick": "галт хана",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "галт хана",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.55319,
+    "web_cooc": 26,
+    "tech": 73,
+    "all": 133,
+    "share": 0.5488721804511278,
+    "lift": 25.87346811403294,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "firewall",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.48352,
+    "web_cooc": 22,
+    "tech": 119,
+    "all": 185,
+    "share": 0.6432432432432432,
+    "lift": 30.32205700413175,
+    "tag": "mined"
+   },
+   {
+    "surface": "галт ханын",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.17647,
+    "web_cooc": 6,
+    "tech": 11,
+    "all": 22,
+    "share": 0.5,
+    "lift": 23.56966615867384,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "галт хана": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "firewall (comp.)"
+    ]
+   },
+   "l:firewall": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "галт ханын": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Module-4: Firewall ",
+     "Module-4: Галт хана "
+    ],
+    [
+     "Firewalls, WAFs, Packet Inspection devices ",
+     "Галт хана, WAF, Пакет хяналтын төхөөрөмжүүд "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "port",
+  "status": "unsure",
+  "official": "порт",
+  "dev": "порт",
+  "pick": "порт",
+  "decision": "auto",
+  "why": "web only, decisive",
+  "collision": [],
+  "top": [
+   {
+    "surface": "порт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.60404,
+    "web_cooc": 479,
+    "tech": 123,
+    "all": 977,
+    "share": 0.12589559877175024,
+    "lift": 5.9346344677930025,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "боомт",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.18986,
+    "web_cooc": 118,
+    "tech": 529,
+    "all": 17666,
+    "share": 0.02994452620853617,
+    "lift": 1.4115649720297136,
+    "tag": "mined"
+   },
+   {
+    "surface": "портыг",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.11903,
+    "web_cooc": 66,
+    "tech": 59,
+    "all": 182,
+    "share": 0.3241758241758242,
+    "lift": 15.281431905074248,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "порт": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "port (comp.)"
+    ]
+   },
+   "боомт": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "border point",
+     "harbour",
+     "harbor",
+     "quay (comm.)"
+    ]
+   },
+   "порты": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Harwich Port ",
+     "Харвич Порт "
+    ],
+    [
+     "Port of Raahe ",
+     "Порт Раахе "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "version",
+  "status": "confirmed",
+  "official": "хувилбар",
+  "dev": "хувилбар",
+  "pick": "хувилбар",
+  "decision": "auto",
+  "why": "ui and web agree",
+  "collision": [],
+  "top": [
+   {
+    "surface": "хувилбар",
+    "ui": 0.67257,
+    "ui_cooc": 38,
+    "web": 0.59553,
+    "web_cooc": 1133,
+    "tech": 5571,
+    "all": 55992,
+    "share": 0.09949635662237462,
+    "lift": 4.690191819187453,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "version",
+    "ui": 0.13636,
+    "ui_cooc": 3,
+    "web": 0.06379,
+    "web_cooc": 54,
+    "tech": 75,
+    "all": 329,
+    "share": 0.22796352583586627,
+    "lift": 10.746048400611173,
+    "tag": "mined"
+   },
+   {
+    "surface": "шинэчлэх",
+    "ui": 0.12048,
+    "ui_cooc": 5,
+    "web": 0.04926,
+    "web_cooc": 112,
+    "tech": 9235,
+    "all": 124300,
+    "share": 0.0742960579243765,
+    "lift": 3.502266564366096,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "хувил": {
+    "status": "pass",
+    "note": "matches term tech tag",
+    "senses": [
+     "version",
+     "alternate",
+     "scenario (geol.)",
+     "vary"
+    ]
+   },
+   "l:version": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "шинэч": {
+    "status": "flag",
+    "note": "first sense 'update' non-technical",
+    "senses": [
+     "update",
+     "renew",
+     "sophisticate",
+     "rehabilitation"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "Printable version",
+     "Хэвлэх хувилбар"
+    ],
+    [
+     "GPS tag version",
+     "GPS шошгоны хувилбар"
+    ]
+   ],
+   "web": [
+    [
+     "EPUB Version ",
+     "EPUB хувилбар "
+    ],
+    [
+     "Version: 1.1 ",
+     "хувилбар: 1.1 "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "test",
+  "status": "unsure",
+  "official": "туршилт",
+  "dev": "тест",
+  "pick": "туршид",
+  "decision": "review",
+  "why": "sense flag: first sense 'along' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "туршид",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.41194,
+    "web_cooc": 1097,
+    "tech": 4250,
+    "all": 56163,
+    "share": 0.07567259583711697,
+    "lift": 3.5671556424821973,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "тест",
+    "ui": 0.0,
+    "ui_cooc": 1,
+    "web": 0.29883,
+    "web_cooc": 498,
+    "tech": 514,
+    "all": 3586,
+    "share": 0.14333519241494702,
+    "lift": 6.75672526801916,
+    "tag": "mined+rendering"
+   },
+   {
+    "surface": "test",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.17678,
+    "web_cooc": 271,
+    "tech": 72,
+    "all": 532,
+    "share": 0.13533834586466165,
+    "lift": 6.3797592609944225,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "турши": {
+    "status": "flag",
+    "note": "first sense 'along' non-technical",
+    "senses": [
+     "along",
+     "throughout",
+     "in the course of",
+     "during"
+    ]
+   },
+   "тест": {
+    "status": "pass",
+    "note": "matches term",
+    "senses": [
+     "test"
+    ]
+   },
+   "l:test": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [
+    [
+     "JavaScript testing",
+     "JavaScript туршилт"
+    ]
+   ],
+   "web": [
+    [
+     "testing Iperf ",
+     "туршилтын Iperf "
+    ],
+    [
+     "Test 25 port ",
+     "Туршилтын 25 портыг "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "outage/downtime",
+  "status": "confirmed",
+  "official": "үйлчилгээний тасалдал",
+  "dev": "outage",
+  "pick": "цахилгаан тасарсан",
+  "decision": "review",
+  "why": "sense none: no bolor-toli entry",
+  "collision": [],
+  "top": [
+   {
+    "surface": "цахилгаан тасарсан",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.18182,
+    "web_cooc": 2,
+    "tech": 25,
+    "all": 353,
+    "share": 0.0708215297450425,
+    "lift": 3.3384796258744815,
+    "tag": "mined"
+   },
+   {
+    "surface": "сул зогсож",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.13793,
+    "web_cooc": 2,
+    "tech": 30,
+    "all": 470,
+    "share": 0.06382978723404255,
+    "lift": 3.008893552171128,
+    "tag": "mined"
+   },
+   {
+    "surface": "ашиглах хугацаа",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.07547,
+    "web_cooc": 2,
+    "tech": 98,
+    "all": 1498,
+    "share": 0.06542056074766354,
+    "lift": 3.0838815534713433,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "цахил тасар": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "сул зогсо": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   },
+   "ашигл хугац": {
+    "status": "none",
+    "note": "no bolor-toli entry",
+    "senses": []
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "As LED technology evolves, emergency function becomes one of the features of LED lighting products. Abestled LED tri-proof Lights and high bay lights come from emergency function with the battery- backed device that switches on automatically when a building experiences a power outage, and available to Continuous illumination for 1-3 hours. ",
+     "LED технологи хирээр, онцгой байдлын функц LED гэрэлтүүлэг бүтээгдэхүүний онцлог нь нэг нь болдог. Abestled LED гурван тэсвэртэй гэрэл, өндөр булан гэрэл battery- 1-3 цагийн турш тасралтгүй гэрэлтүүлгийн болон барилгын цахилгаан тасарсаныг туршлага автоматаар дээр шилжүүлдэг төхөөрөмж, боломжтой тулгуурласан яаралтай тусламжийн үйл ажиллагаа ирдэг. "
+    ],
+    [
+     "The effectiveness of this approach is well documented. Urban parks can reduce ambient daytime temperature by an average of approximately 1°C. Milan—which suffered power outages due to demand for air conditioning during the summer heatwave—is planning to plant three million trees by 2050 to reduce the heat island effect and increase air quality. Meanwhile, green roofs can cut energy use by 10 to 15 per cent. In cities such as Athens, there is evidence that they can reduce high cooling loads in buildings by 66 per cent. ",
+     "Энэ аргын үр нөлөөг сайн баримтжуулсан болно. Хотын паркууд нь өдрийн цагаар агаарын температурыг дунджаар 1 ° C-ээр бууруулж чаддаг. Зуны халалтын үеэр агааржуулагч шаардагдсанаас болж цахилгаан тасарсан Милан нь дулааны арлын эффектийг бууруулах, агаарын чанарыг сайжруулах зорилгоор 2050-ээр гурван сая мод тарихаар төлөвлөж байна. Үүний зэрэгцээ, ногоон дээвэр нь эрчим хүчний хэрэглээг 10-ээс 15 хувь хүртэл бууруулах боломжтой. Афина зэрэг хотуудад барилга байгууламж дахь хөргөлтийн өндөр ачааллыг 66 хувиар бууруулах боломжтой гэсэн нотолгоо байдаг. "
+    ]
+   ]
+  }
+ },
+ {
+  "term": "incident",
+  "status": "unsure",
+  "official": "саатал",
+  "dev": "incident",
+  "pick": "ослын",
+  "decision": "review",
+  "why": "sense flag: first sense 'bailout' non-technical",
+  "collision": [],
+  "top": [
+   {
+    "surface": "ослын",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.0878,
+    "web_cooc": 9,
+    "tech": 341,
+    "all": 12887,
+    "share": 0.026460774423837975,
+    "lift": 1.2473432389396724,
+    "tag": "mined"
+   },
+   {
+    "surface": "incident",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.07874,
+    "web_cooc": 5,
+    "tech": 5,
+    "all": 25,
+    "share": 0.2,
+    "lift": 9.427866463469536,
+    "tag": "mined"
+   },
+   {
+    "surface": "харь",
+    "ui": 0.0,
+    "ui_cooc": 0,
+    "web": 0.07792,
+    "web_cooc": 9,
+    "tech": 209,
+    "all": 5194,
+    "share": 0.04023873700423566,
+    "lift": 1.8968271956730198,
+    "tag": "mined"
+   }
+  ],
+  "sense": {
+   "ослын": {
+    "status": "flag",
+    "note": "first sense 'bailout' non-technical",
+    "senses": [
+     "bailout",
+     "stand-by",
+     "wrecking",
+     "Breakdown"
+    ]
+   },
+   "l:incident": {
+    "status": "n/a",
+    "note": "Latin form",
+    "senses": []
+   },
+   "харь": {
+    "status": "flag",
+    "note": "first sense 'alien' non-technical",
+    "senses": [
+     "alien",
+     "strange",
+     "foreign"
+    ]
+   }
+  },
+  "examples": {
+   "ui": [],
+   "web": [
+    [
+     "Additionally, this course is intended for technical users responsible for creating and maintaining Symantec Data Loss Prevention policies and the incident response structure. ",
+     "Үүнээс гадна, энэ сургалт нь Symantec Data Damaged Prevention бодлого болон ослын хариу үйлдлийн бүтцийг бий болгох, хадгалах үүрэг бүхий техникийн хэрэглэгчдэд зориулагдана. "
+    ],
+    [
+     "Bible: Real story Black ops Starfish Incident in the Rendlesham Forest Indian history John F. Kennedy Collective consciousness Quantum physics Majestic 12 Aliens at the Sun Weather modification Giant Protracted skull Interview with an alien Steven Greer: Unacknowledged Third Eye Forbidden archeology Lost Memory of Humankind Near-death experiences False flag attack Life on Mars ",
+     "Өглөө эрт 27. 12-р сарын 1980 нь АНУ-ын Вашингтоны хаалганы цаана АНУ-ын хоёр агаарын хүчний хамгаалалтын ажилтнууд харуулав. Тэд онгоцны ослоор эсвэл ослын сүйрэлд өртөж болзошгүй гэж бодсон тул тэд гарч явахыг зөвшөөрсөн юм. Тэдний үүрэг гүйцэтгэж байсан Агаарын командлагч ... "
+    ]
+   ]
+  }
+ }
+]

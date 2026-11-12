@@ -42,17 +42,105 @@ GOOD = """Хууль батлагдсан өдрөөсөө хэрэгжинэ.
 """
 
 
+TERMS = [
+    {"en": "production/prod", "status": "confirmed",
+     "dev": {"group": "english", "write": "prod"},
+     "official": {"group": "native", "write": "ашиглалтын орчин"},
+     "avoid": ["үйлдвэрлэлийн орчин"], "evidence": []},
+    {"en": "server", "status": "confirmed",
+     "dev": {"group": "loan", "write": "сервер"},
+     "official": {"group": "loan", "write": "сервер"}, "avoid": [], "evidence": []},
+    {"en": "dashboard", "status": "unsure",
+     "dev": {"group": "english", "write": "dashboard"},
+     "official": {"group": "native", "write": "хяналтын дэлгэц"},
+     "avoid": ["хяналтын самбар"], "evidence": []},
+]
+
+
+class TermTest(unittest.TestCase):
+    def checks(self, text, setting="dev"):
+        return [(f[1], f[3]) for f in scan_text(text, setting=setting, terms=TERMS)
+                if f[2] == "term"]
+
+    def test_confirmed_avoid_is_an_error(self):
+        self.assertIn(("ERROR", "үйлдвэрлэлийн орчин"), self.checks("Засварыг үйлдвэрлэлийн орчинд гаргасан."))
+
+    def test_unsure_avoid_is_only_a_warning(self):
+        self.assertIn(("WARN", "хяналтын самбар"), self.checks("Хяналтын самбарт харагдана."))
+
+    def test_avoid_matches_only_at_a_word_start(self):
+        terms = [dict(TERMS[1], avoid=["тор"])]
+        self.assertEqual([f for f in scan_text("Мотор эвдэрсэн.", terms=terms) if f[2] == "term"], [])
+
+    def test_bundled_terms_do_not_flag_correct_report_text(self):
+        from bolor import load_terms
+        text = ("Зөрчлийг тогтоосон. Тус салбараас шалгалт хийж, үр дүнг хэвлэлд мэдээлсэн. "
+                "Машиныг дахин ачаалсан. Харилцаа холбооны сүлжээ хэвийн. Мотор солигдсон. "
+                "Үйлдвэрлэлийн хэмжээ өссөн. Хуралдаан болсон.")
+        self.assertEqual([f for f in scan_text(text, terms=load_terms()) if f[2] == "term"], [])
+
+    def test_latin_word_with_a_loanword_warns(self):
+        self.assertIn(("WARN", "server"), self.checks("Server унтарсан."))
+
+    def test_english_group_stays_latin_in_dev(self):
+        self.assertEqual(self.checks("Засварыг prod орчинд гаргасан."), [])
+
+    def test_same_word_warns_in_official(self):
+        self.assertIn(("WARN", "prod"), self.checks("Засварыг prod орчинд гаргасан.", "official"))
+
+    def test_code_and_english_only_lines_are_ignored(self):
+        self.assertEqual(self.checks("Run `server start` дараа нь шалгасан."), [])
+        self.assertEqual(self.checks("The server is down."), [])
+
+    def test_bundled_terms_file_is_valid(self):
+        from bolor import load_terms, SETTINGS
+        for e in load_terms():
+            with self.subTest(term=e.get("en")):
+                self.assertIn(e["status"], ("confirmed", "unsure"))
+                for s in SETTINGS:
+                    self.assertIn(e[s]["group"], ("english", "loan", "native"))
+                    self.assertTrue(e[s]["write"])
+                if e["status"] == "confirmed":
+                    self.assertTrue(e["evidence"], "confirmed needs evidence")
+
+
+class CliTest(unittest.TestCase):
+    def run_cli(self, *args):
+        import subprocess, sys, os
+        here = os.path.dirname(os.path.abspath(__file__))
+        return subprocess.run([sys.executable, os.path.join(here, "bolor.py"), *args],
+                              capture_output=True, text=True, cwd="/")
+
+    def test_scan_json_reports_errors_and_exit_code(self):
+        import json, tempfile
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as f:
+            f.write("Бид засварыг үйлдвэрлэлийн орчинд гаргасан.\n")
+        r = self.run_cli("--scan", f.name, "--json")
+        out = json.loads(r.stdout)
+        self.assertEqual(r.returncode, 1)
+        self.assertGreaterEqual(out["errors"], 2)
+        self.assertIn("first-person", [x["check"] for x in out["findings"]])
+
+    def test_term_json_takes_several_words(self):
+        import json
+        r = self.run_cli("--term", "server", "nosuchterm", "--json")
+        out = json.loads(r.stdout)
+        self.assertEqual(out["server"]["dev"]["write"], "сервер")
+        self.assertIsNone(out["nosuchterm"])
+        self.assertEqual(r.returncode, 1)
+
+
 class ScanTest(unittest.TestCase):
     def test_each_bad_line_trips_its_check(self):
         for check, line in BAD:
             with self.subTest(line=line):
-                self.assertIn(check, [f[2] for f in scan_text(line)])
+                self.assertIn(check, [f[2] for f in scan_text(line, terms=[])])
 
     def test_correct_text_is_clean(self):
-        self.assertEqual(scan_text(GOOD), [])
+        self.assertEqual(scan_text(GOOD, terms=[]), [])
 
     def test_allow_skips_a_term(self):
-        self.assertEqual(scan_text("Хаалга эвдэрсэн.", allow=("хаалга",)), [])
+        self.assertEqual(scan_text("Хаалга эвдэрсэн.", allow=("хаалга",), terms=[]), [])
 
 
 if __name__ == "__main__":

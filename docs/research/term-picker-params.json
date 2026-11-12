@@ -1,0 +1,56 @@
+{
+ "params": {
+  "w_ui": 1.0,
+  "w_web": 1.0,
+  "w_corp": 0.0,
+  "tau_ui": 0.1,
+  "tau_web": 0.2,
+  "margin": 1.0,
+  "min_ui": 3,
+  "min_web": 2
+ },
+ "tuned_on": [
+  "access/permission",
+  "bug",
+  "database",
+  "error",
+  "firewall",
+  "install",
+  "network",
+  "outage/downtime",
+  "server",
+  "token",
+  "upgrade",
+  "version"
+ ],
+ "grid": {
+  "w_ui": [
+   0.0,
+   0.5,
+   1.0,
+   2.0
+  ],
+  "w_web": [
+   0.5,
+   1.0,
+   2.0
+  ],
+  "w_corp": [
+   0.0,
+   0.25,
+   0.5,
+   1.0
+  ],
+  "min_ui": [
+   1,
+   2,
+   3,
+   5
+  ],
+  "min_web": [
+   2,
+   3,
+   5
+  ]
+ }
+}
