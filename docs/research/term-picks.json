@@ -688,7 +688,7 @@
     "tag": "rendering"
    },
    {
-    "surface": "l:staging",
+    "surface": "staging",
     "ui": 0.0,
     "ui_cooc": 0,
     "web": 0.0,
@@ -2191,7 +2191,7 @@
     "tag": "mined"
    },
    {
-    "surface": "l:logout",
+    "surface": "logout",
     "ui": 0.0,
     "ui_cooc": 0,
     "web": 0.0,

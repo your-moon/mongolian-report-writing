@@ -417,7 +417,7 @@ def score_term(rec, base_share, p, blind=False):
         share = tech / allc if allc else 0.0
         corp = share * min(1.0, math.log10(1 + tech) / 4)
         s = p["w_ui"] * ui + p["w_web"] * web + p["w_corp"] * corp
-        rows.append(dict(key=k, surface=c["surface"], tag=c["tag"], score=s, ui=ui, web=web, ui_cooc=c["ui"]["cooc"],
+        rows.append(dict(key=k, surface=c["surface"].replace("l:", ""), tag=c["tag"], score=s, ui=ui, web=web, ui_cooc=c["ui"]["cooc"],
                          web_cooc=c["web"]["cooc"], tech=tech, all=allc, share=share,
                          lift=(share / base_share if base_share else 0.0), len=c["len"], ex=c["ex"]))
     rows.sort(key=lambda r: (-r["score"], -r["len"]))
