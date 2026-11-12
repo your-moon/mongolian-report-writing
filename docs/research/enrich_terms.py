@@ -1,4 +1,7 @@
-"""Add Microsoft Terminology and CC-100 usage counts as evidence to terms.json.
+"""Add Microsoft Terminology renderings to terms.json, dropping any with zero CC-100 sentences.
+
+Usage counts for competing words are hand-written patterns in layers.py; automatic stems
+miscounted (see stem()).
 
 Usage: python3 docs/research/enrich_terms.py MONGOLIAN.tbx ~/.cache/mongolian-terms/mn.txt.xz
 A Microsoft rendering with zero corpus hits is recorded as dropped, not as evidence.
@@ -23,9 +26,14 @@ def microsoft(tbx):
 
 
 def stem(phrase):
-    """Each word cut to max(3, len-2) letters, so inflected forms still match."""
-    return r"\S*\s+".join(re.escape(w if len(w) <= 3 else w[:max(3, len(w) - 2)])
-                          for w in phrase.lower().split())
+    """Exact phrase; only the last word's ending may vary (last 2 letters free).
+
+    Looser stems overcounted badly: "гац" for гацах matched 12,831 sentences against 250
+    hand-checked, and хамгаалалттай гарц matched unrelated хамгаалалт... гар... text.
+    """
+    words = phrase.lower().split()
+    last = words[-1] if len(words[-1]) <= 3 else words[-1][:max(3, len(words[-1]) - 2)]
+    return r"\s+".join(map(re.escape, words[:-1] + [last]))
 
 
 def count(corpus, phrases):
@@ -63,13 +71,10 @@ def main(tbx, corpus):
     for e in terms:
         ev = [x for x in e.get("evidence") or [] if x.get("source") not in ("microsoft", "cc-100")]
         for c in per_term[e["en"]]:
-            if n[c]:
+            if n[c] or not re.search(r"[а-яөүё]", c):   # Latin forms are not counted
                 ev.append({"source": "microsoft", "quote": f"{e['en']} -> {c}"})
             else:
                 ev.append({"source": "microsoft", "quote": f"{e['en']} -> {c} (dropped: 0 CC-100 sentences)"})
-        for w in dict.fromkeys([e["dev"]["write"], e["official"]["write"]]):
-            if re.search(r"[а-яөүё]", w.lower()):
-                ev.append({"source": "cc-100", "quote": f"{w}: {n[w.lower()]} of 15.1M sentences"})
         e["evidence"] = ev
     json.dump(terms, open(TERMS, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(f"{len(terms)} terms enriched; {sum(1 for c in phrases if n[c] == 0)} phrases with zero hits")

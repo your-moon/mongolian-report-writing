@@ -28,10 +28,6 @@
    {
     "source": "microsoft",
     "quote": "deploy -> ашиглах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "ашиглалтад нэвтрүүлэх: 24 of 15.1M sentences"
    }
   ]
  },
@@ -78,10 +74,6 @@
    {
     "source": "microsoft",
     "quote": "release -> суллах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "гаргах: 445332 of 15.1M sentences"
    }
   ]
  },
@@ -102,10 +94,6 @@
    {
     "source": "microsoft",
     "quote": "rollback -> ухралт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "өмнөх хувилбарт буцаах: 0 of 15.1M sentences"
    }
   ]
  },
@@ -141,15 +129,11 @@
    },
    {
     "source": "microsoft",
-    "quote": "build -> компиляц хийх"
+    "quote": "build -> компиляц хийх (dropped: 0 CC-100 sentences)"
    },
    {
     "source": "microsoft",
     "quote": "build -> хөрвүүлэх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хувилбар: 49461 of 15.1M sentences"
    }
   ]
  },
@@ -174,10 +158,6 @@
    {
     "source": "bolor-toli",
     "quote": "commit -> гэмт хэрэг үйлдэх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "өөрчлөлтийг хадгалах: 14 of 15.1M sentences"
    }
   ]
  },
@@ -210,10 +190,6 @@
    {
     "source": "microsoft",
     "quote": "merge -> нэгтгэх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нэгтгэх: 33569 of 15.1M sentences"
    }
   ]
  },
@@ -300,10 +276,6 @@
    {
     "source": "bolor-toli",
     "quote": "staging -> жүжиг тавих"
-   },
-   {
-    "source": "cc-100",
-    "quote": "туршилтын орчин: 16 of 15.1M sentences"
    }
   ]
  },
@@ -334,10 +306,6 @@
    {
     "url": "https://gogo.mn/r/6884qy",
     "quote": "Газрын тос боловсруулах үйлдвэр ашиглалтад орсноор"
-   },
-   {
-    "source": "cc-100",
-    "quote": "ашиглалтын орчин: 117 of 15.1M sentences"
    }
   ]
  },
@@ -372,10 +340,6 @@
    {
     "source": "microsoft",
     "quote": "server -> сервер"
-   },
-   {
-    "source": "cc-100",
-    "quote": "сервер: 8200 of 15.1M sentences"
    }
   ]
  },
@@ -408,10 +372,6 @@
    {
     "source": "microsoft",
     "quote": "database -> өгөгдлийн сан"
-   },
-   {
-    "source": "cc-100",
-    "quote": "өгөгдлийн сан: 1597 of 15.1M sentences"
    }
   ]
  },
@@ -444,10 +404,6 @@
    {
     "source": "microsoft",
     "quote": "backup -> нөөц файл"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нөөцлөлт: 1565 of 15.1M sentences"
    }
   ]
  },
@@ -480,10 +436,6 @@
    {
     "source": "microsoft",
     "quote": "restore -> сэргээх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "сэргээх: 89709 of 15.1M sentences"
    }
   ]
  },
@@ -522,10 +474,6 @@
    {
     "source": "microsoft",
     "quote": "log -> бичих"
-   },
-   {
-    "source": "cc-100",
-    "quote": "системийн лог: 8 of 15.1M sentences"
    }
   ]
  },
@@ -558,10 +506,6 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "кибер аюулгүй байдлын хоёр ноцтой алдааны улмаас"
-   },
-   {
-    "source": "cc-100",
-    "quote": "алдаа: 249540 of 15.1M sentences"
    }
   ]
  },
@@ -590,10 +534,6 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Төлөвлөгөөт засвар үйлчилгээний мэдэгдэл"
-   },
-   {
-    "source": "cc-100",
-    "quote": "засвар: 75986 of 15.1M sentences"
    }
   ]
  },
@@ -626,10 +566,6 @@
    {
     "source": "microsoft",
     "quote": "feature -> онцлог"
-   },
-   {
-    "source": "cc-100",
-    "quote": "боломж: 2000220 of 15.1M sentences"
    }
   ]
  },
@@ -682,10 +618,6 @@
    {
     "source": "microsoft",
     "quote": "update -> мэдээ"
-   },
-   {
-    "source": "cc-100",
-    "quote": "шинэчлэл: 83919 of 15.1M sentences"
    }
   ]
  },
@@ -722,10 +654,6 @@
    {
     "source": "microsoft",
     "quote": "upgrade -> сайжруулах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "шинэчлэл: 83919 of 15.1M sentences"
    }
   ]
  },
@@ -762,10 +690,6 @@
    {
     "source": "microsoft",
     "quote": "install -> суурилуулах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "суулгах: 36647 of 15.1M sentences"
    }
   ]
  },
@@ -798,10 +722,6 @@
    {
     "source": "microsoft",
     "quote": "uninstall -> арилгах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "устгах: 50789 of 15.1M sentences"
    }
   ]
  },
@@ -838,10 +758,6 @@
    {
     "source": "microsoft",
     "quote": "download -> татан авалт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "татаж авах: 36459 of 15.1M sentences"
    }
   ]
  },
@@ -874,10 +790,6 @@
    {
     "source": "microsoft",
     "quote": "upload -> байршуулах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "байршуулах: 68603 of 15.1M sentences"
    }
   ]
  },
@@ -906,10 +818,6 @@
    {
     "url": "https://www.gogo.mn/",
     "quote": "https://gogo.mn/login Нэвтрэх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нэвтрэх: 122391 of 15.1M sentences"
    }
   ]
  },
@@ -934,10 +842,6 @@
    {
     "source": "bolor-toli",
     "quote": "logout -> холболтоос гарах"
-   },
-   {
-    "source": "cc-100",
-    "quote": "системээс гарах: 123 of 15.1M sentences"
    }
   ]
  },
@@ -976,10 +880,6 @@
    {
     "source": "microsoft",
     "quote": "password -> нууц үг"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нууц үг: 24832 of 15.1M sentences"
    }
   ]
  },
@@ -1000,10 +900,6 @@
    {
     "source": "microsoft",
     "quote": "username -> хэрэглэгчийн нэр"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хэрэглэгчийн нэр: 6699 of 15.1M sentences"
    }
   ]
  },
@@ -1036,10 +932,6 @@
    {
     "source": "microsoft",
     "quote": "user -> хэрэглэгч"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хэрэглэгч: 274787 of 15.1M sentences"
    }
   ]
  },
@@ -1072,10 +964,6 @@
    {
     "source": "microsoft",
     "quote": "admin -> компьютерийн администратор (dropped: 0 CC-100 sentences)"
-   },
-   {
-    "source": "cc-100",
-    "quote": "администратор: 521 of 15.1M sentences"
    }
   ]
  },
@@ -1112,14 +1000,6 @@
    {
     "source": "microsoft",
     "quote": "account -> skype хэрэглэгчийн бүртгэл (dropped: 0 CC-100 sentences)"
-   },
-   {
-    "source": "cc-100",
-    "quote": "аккаунт: 659 of 15.1M sentences"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хэрэглэгчийн бүртгэл: 393 of 15.1M sentences"
    }
   ]
  },
@@ -1156,10 +1036,6 @@
    {
     "source": "microsoft",
     "quote": "dashboard -> хянах самбар"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нэгдсэн хяналтын дэлгэц: 2 of 15.1M sentences"
    }
   ]
  },
@@ -1192,10 +1068,6 @@
    {
     "source": "microsoft",
     "quote": "settings -> тохиргоо"
-   },
-   {
-    "source": "cc-100",
-    "quote": "тохиргоо: 6118 of 15.1M sentences"
    }
   ]
  },
@@ -1232,10 +1104,6 @@
    {
     "source": "microsoft",
     "quote": "notification -> сануулга"
-   },
-   {
-    "source": "cc-100",
-    "quote": "мэдэгдэл: 106372 of 15.1M sentences"
    }
   ]
  },
@@ -1276,14 +1144,6 @@
    {
     "source": "microsoft",
     "quote": "app/application -> програм"
-   },
-   {
-    "source": "cc-100",
-    "quote": "апп: 21391 of 15.1M sentences"
-   },
-   {
-    "source": "cc-100",
-    "quote": "аппликэйшн: 1908 of 15.1M sentences"
    }
   ]
  },
@@ -1320,10 +1180,6 @@
    {
     "source": "microsoft",
     "quote": "website -> вэб сайт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "вэб сайт: 31329 of 15.1M sentences"
    }
   ]
  },
@@ -1356,14 +1212,6 @@
    {
     "source": "microsoft",
     "quote": "browser -> вэб хөтөч"
-   },
-   {
-    "source": "cc-100",
-    "quote": "браузер: 639 of 15.1M sentences"
-   },
-   {
-    "source": "cc-100",
-    "quote": "вэб хөтөч: 427 of 15.1M sentences"
    }
   ]
  },
@@ -1412,14 +1260,6 @@
    {
     "source": "microsoft",
     "quote": "link -> вэб холбоос"
-   },
-   {
-    "source": "cc-100",
-    "quote": "линк: 20256 of 15.1M sentences"
-   },
-   {
-    "source": "cc-100",
-    "quote": "холбоос: 832026 of 15.1M sentences"
    }
   ]
  },
@@ -1452,10 +1292,6 @@
    {
     "source": "microsoft",
     "quote": "file -> файл"
-   },
-   {
-    "source": "cc-100",
-    "quote": "файл: 13204 of 15.1M sentences"
    }
   ]
  },
@@ -1480,10 +1316,6 @@
    {
     "source": "microsoft",
     "quote": "folder -> хавтас"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хавтас: 22030 of 15.1M sentences"
    }
   ]
  },
@@ -1528,10 +1360,6 @@
    {
     "source": "microsoft",
     "quote": "cloud -> интернет"
-   },
-   {
-    "source": "cc-100",
-    "quote": "үүлэн технологи: 284 of 15.1M sentences"
    }
   ]
  },
@@ -1572,10 +1400,6 @@
    {
     "source": "microsoft",
     "quote": "network -> сүлжээ"
-   },
-   {
-    "source": "cc-100",
-    "quote": "сүлжээ: 88419 of 15.1M sentences"
    }
   ]
  },
@@ -1604,10 +1428,6 @@
    {
     "source": "microsoft",
     "quote": "connection -> холболт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "холболт: 832026 of 15.1M sentences"
    }
   ]
  },
@@ -1628,10 +1448,6 @@
    {
     "source": "bolor-toli",
     "quote": "timeout -> хугацаа хэтрэлт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хугацаа хэтрэх: 728 of 15.1M sentences"
    }
   ]
  },
@@ -1664,10 +1480,6 @@
    {
     "source": "microsoft",
     "quote": "error -> алдаа"
-   },
-   {
-    "source": "cc-100",
-    "quote": "алдаа: 249540 of 15.1M sentences"
    }
   ]
  },
@@ -1702,10 +1514,6 @@
    {
     "source": "bolor-toli",
     "quote": "гацах -> become jammed, stick"
-   },
-   {
-    "source": "cc-100",
-    "quote": "гацах: 12831 of 15.1M sentences"
    }
   ]
  },
@@ -1734,10 +1542,6 @@
    {
     "source": "microsoft",
     "quote": "reboot/restart -> дахин эхлүүлэх"
-   },
-   {
-    "source": "cc-100",
-    "quote": "дахин ачаалах: 254 of 15.1M sentences"
    }
   ]
  },
@@ -1774,10 +1578,6 @@
    {
     "source": "microsoft",
     "quote": "cache -> завсрын санах ойд хадгалах (dropped: 0 CC-100 sentences)"
-   },
-   {
-    "source": "cc-100",
-    "quote": "кэш: 179 of 15.1M sentences"
    }
   ]
  },
@@ -1797,7 +1597,7 @@
   "evidence": [
    {
     "source": "microsoft",
-    "quote": "API -> api (dropped: 0 CC-100 sentences)"
+    "quote": "API -> api"
    },
    {
     "source": "microsoft",
@@ -1834,10 +1634,6 @@
    {
     "source": "microsoft",
     "quote": "token -> токен"
-   },
-   {
-    "source": "cc-100",
-    "quote": "токен: 12359 of 15.1M sentences"
    }
   ]
  },
@@ -1866,10 +1662,6 @@
    {
     "source": "microsoft",
     "quote": "session -> логик холболт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "нэвтрэлт: 39012 of 15.1M sentences"
    }
   ]
  },
@@ -1910,10 +1702,6 @@
    {
     "source": "microsoft",
     "quote": "access/permission -> зөвшөөрөл"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хандалт: 79931 of 15.1M sentences"
    }
   ]
  },
@@ -1946,10 +1734,6 @@
    {
     "source": "bolor-toli",
     "quote": "эрх -> right, privilege"
-   },
-   {
-    "source": "cc-100",
-    "quote": "эрхийн түвшин: 25 of 15.1M sentences"
    }
   ]
  },
@@ -1982,10 +1766,6 @@
    {
     "source": "microsoft",
     "quote": "encryption -> шифрлэлт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "шифрлэлт: 866 of 15.1M sentences"
    }
   ]
  },
@@ -2014,10 +1794,6 @@
    {
     "source": "microsoft",
     "quote": "firewall -> хамгаалалттай гарц"
-   },
-   {
-    "source": "cc-100",
-    "quote": "галт хана: 246 of 15.1M sentences"
    }
   ]
  },
@@ -2048,10 +1824,6 @@
    {
     "source": "microsoft",
     "quote": "port -> порт"
-   },
-   {
-    "source": "cc-100",
-    "quote": "порт: 121582 of 15.1M sentences"
    }
   ]
  },
@@ -2088,10 +1860,6 @@
    {
     "source": "microsoft",
     "quote": "version -> хувилбар"
-   },
-   {
-    "source": "cc-100",
-    "quote": "хувилбар: 49461 of 15.1M sentences"
    }
   ]
  },
@@ -2120,14 +1888,6 @@
    {
     "url": "https://unread.today/c/insight-how-to-save-your-ai-token",
     "quote": "туршилт хийсэн хөгжүүлэгч"
-   },
-   {
-    "source": "cc-100",
-    "quote": "тест: 7812 of 15.1M sentences"
-   },
-   {
-    "source": "cc-100",
-    "quote": "туршилт: 51476 of 15.1M sentences"
    }
   ]
  },
@@ -2160,10 +1920,6 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "дэлхий даяар вэб сайтуудын ажиллагаа тасалдав"
-   },
-   {
-    "source": "cc-100",
-    "quote": "үйлчилгээний тасалдал: 13 of 15.1M sentences"
    }
   ]
  },
@@ -2200,10 +1956,6 @@
    {
     "source": "microsoft",
     "quote": "incident -> тохиолдол"
-   },
-   {
-    "source": "cc-100",
-    "quote": "системийн доголдол: 39 of 15.1M sentences"
    }
   ]
  }
