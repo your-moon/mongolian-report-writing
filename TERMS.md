@@ -46,19 +46,30 @@ The evidence was collected 2026-11-11: 60 terms, 24 confirmed, 36 unsure.
 
 Trust real usage over the dictionary when they disagree.
 
-## Pick a rendering from data
+## Choosing from data was tried, and it does not work
 
-`pick_terms.py` proposes a rendering for each term from corpora instead of judgment: UI translations
-(translatewiki, GNOME, Ubuntu), web pairs (OPUS CCAligned) and CC-100 Mongolian text. It reports each
-signal separately (ui, web, corpus, bolor-toli sense, collision) and marks a term `auto` or `review`.
-Treat it as a source of evidence for `review`, not as a replacement for the rule in "What confirmed means":
-`docs/research/term-picker-eval.md` shows how often it reproduces the confirmed terms.
+`docs/research/pick_terms.py` (2026-11-12) mined renderings from software UI translations
+(translatewiki, GNOME, Ubuntu: about 8k sentence pairs), 567k English–Mongolian web pairs (OPUS
+CCAligned) and 14M CC-100 Mongolian sentences, then checked each pick against bolor-toli.
+
+It reproduced **5 of 12** held-out confirmed terms. Some picks it marked confident were worse
+than a guess: crash → сүйрэл (catastrophe), fix → тогтмол, role → үүрэг. Reasons, from
+`docs/research/term-picker-eval.md`:
+
+- The Mongolian data is customer-facing text. Developer terms (build, session, deploy, commit)
+  have no data or produce junk n-grams.
+- Agreement between the UI and web data is not a safe signal; on the held-out half, 3 of 6
+  agreed picks were right.
+- bolor-toli has no entry for inflected, multi-word or loanword forms, so the sense check is
+  blind on about a third of the picks.
+
+A native reader decides. The script is still useful for one thing: real sentence pairs showing
+how a term was translated, to look at while deciding.
 
 ```sh
-python3 pick_terms.py download   # ~460 MB into ~/.cache/mongolian-terms/ (about 3 min)
-python3 pick_terms.py index      # ~1.5 min
-python3 pick_terms.py pick       # docs/research/term-picks.{json,md}; live bolor-toli calls, 2 s apart
-python3 pick_terms.py eval       # docs/research/term-picker-eval.md
+python3 docs/research/pick_terms.py download   # ~460 MB into ~/.cache/mongolian-terms/
+python3 docs/research/pick_terms.py index
+python3 docs/research/pick_terms.py pick       # docs/research/term-picks.md has example pairs per term
 ```
 
 ## Add or correct a term

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""pick_terms.py - choose how Mongolian text renders each English software term, from data.
+"""EXPERIMENT. It failed its evaluation (5/12 held-out confirmed terms): use it for example
+sentences when reviewing a term, never to choose one. See docs/research/term-picker-eval.md.
+
+pick_terms.py - choose how Mongolian text renders each English software term, from data.
 
     pick_terms.py download          # corpora -> ~/.cache/mongolian-terms/ (parallel ranged, resumable)
     pick_terms.py index             # mine candidates + count signals -> ~/.cache/mongolian-terms/index.json
@@ -17,7 +20,7 @@ Python 3 stdlib only. Mongolian is agglutinative, so candidates are keyed on a 5
 import argparse, collections, concurrent.futures as cf, json, lzma, math, multiprocessing as mp
 import os, re, sys, threading, time, urllib.request, zipfile
 
-HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # repo root
 sys.path.insert(0, HERE)
 CACHE = os.path.expanduser("~/.cache/mongolian-terms")
 INDEX = os.path.join(CACHE, "index.json")
