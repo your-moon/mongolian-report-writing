@@ -46,6 +46,21 @@ The evidence was collected 2026-11-11: 60 terms, 24 confirmed, 36 unsure.
 
 Trust real usage over the dictionary when they disagree.
 
+## Pick a rendering from data
+
+`pick_terms.py` proposes a rendering for each term from corpora instead of judgment: UI translations
+(translatewiki, GNOME, Ubuntu), web pairs (OPUS CCAligned) and CC-100 Mongolian text. It reports each
+signal separately (ui, web, corpus, bolor-toli sense, collision) and marks a term `auto` or `review`.
+Treat it as a source of evidence for `review`, not as a replacement for the rule in "What confirmed means":
+`docs/research/term-picker-eval.md` shows how often it reproduces the confirmed terms.
+
+```sh
+python3 pick_terms.py download   # ~460 MB into ~/.cache/mongolian-terms/ (about 3 min)
+python3 pick_terms.py index      # ~1.5 min
+python3 pick_terms.py pick       # docs/research/term-picks.{json,md}; live bolor-toli calls, 2 s apart
+python3 pick_terms.py eval       # docs/research/term-picker-eval.md
+```
+
 ## Add or correct a term
 
 1. `python3 ~/.claude/skills/mongolian-report-writing/bolor.py <english word>` for the dictionary senses (go slowly; the API is undocumented).
