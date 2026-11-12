@@ -11,15 +11,17 @@ Usage:
     bolor.py --scan draft.md       # check a finished draft; exit 1 on any ERROR
     bolor.py --scan draft.md --allow=хаалга   # a real door: skip one term or check name
     bolor.py --scan letter.md --setting=official   # official letter/report (default: dev note)
-    bolor.py --term deploy         # how Mongolian text renders it, with evidence
+    bolor.py --term deploy crash   # how Mongolian text renders each term, with evidence
+    add --json to --scan or --term for machine-readable output (exit codes unchanged)
     bolor.py -d 8 үйлдвэрлэл       # другое направление (8=ru, 3=de, 5=jp, 7=cn, 4=kr)
 
 Endpoint is undocumented and same-origin to the site. Keep the volume at human pace —
-one word at a time, results cached in ~/.cache/bolor-toli.json. Do not bulk-scrape it.
+one word at a time, results cached in ~/.cache/bolor-toli/. Do not bulk-scrape it.
 """
 import hashlib, json, os, re, sys, urllib.error, urllib.parse, urllib.request
 
-CACHE = os.path.expanduser("~/.cache/bolor-toli.json")
+CACHE = os.path.expanduser("~/.cache/bolor-toli.json")      # old single-file cache, read only
+CACHE_DIR = os.path.expanduser("~/.cache/bolor-toli")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
 
 # Measured calques from WORDS.md §2a-2d. Each one shipped in a real document.
@@ -179,27 +181,37 @@ def api_key(payload: str) -> str:
     return hashlib.sha256(str(acc).encode()).hexdigest()
 
 
-def fetch(word: str, direction: int = 1) -> dict:
-    cache = {}
-    if os.path.exists(CACHE):
-        try:
-            cache = json.load(open(CACHE, encoding="utf-8"))
-        except Exception:
-            cache = {}
-    ck = f"{direction}:{word}"
-    if ck in cache:
-        return cache[ck]
-    url = ("https://bolor-toli.com/pub/translate?word="
-           + urllib.parse.quote(word) + f"&direction={direction}")
-    req = urllib.request.Request(url, headers={
-        "API-Key": api_key(f"{word}{direction}"), "User-Agent": UA,
-        "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        data = json.loads(r.read().decode("utf-8"))
-    cache[ck] = data
+def _cache_path(word: str, direction: int) -> str:
+    key = hashlib.sha256(f"{direction}:{word}".encode()).hexdigest()[:24]
+    return os.path.join(CACHE_DIR, key + ".json")
+
+
+def _legacy(word: str, direction: int):
+    """Read the old single-file cache once, if it is still there."""
     try:
-        os.makedirs(os.path.dirname(CACHE), exist_ok=True)
-        json.dump(cache, open(CACHE, "w", encoding="utf-8"), ensure_ascii=False)
+        return json.load(open(CACHE, encoding="utf-8")).get(f"{direction}:{word}")
+    except (OSError, ValueError):
+        return None
+
+
+def fetch(word: str, direction: int = 1) -> dict:
+    path = _cache_path(word, direction)
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except (OSError, ValueError):
+        pass
+    data = _legacy(word, direction)
+    if data is None:
+        url = ("https://bolor-toli.com/pub/translate?word="
+               + urllib.parse.quote(word) + f"&direction={direction}")
+        req = urllib.request.Request(url, headers={
+            "API-Key": api_key(f"{word}{direction}"), "User-Agent": UA,
+            "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            data = json.loads(r.read().decode("utf-8"))
+    try:                                # one small file per lookup: no 17 MB rewrite per call
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False)
     except OSError:
         pass                            # a lookup must not fail because the cache can't be saved
     return data
@@ -241,11 +253,17 @@ def report(word: str, direction: int) -> int:
     return 0
 
 
-def scan(path: str, allow=(), setting: str = "dev") -> int:
+def scan(path: str, allow=(), setting: str = "dev", as_json: bool = False) -> int:
     findings = scan_text(open(path, encoding="utf-8").read(), allow, setting)
+    errors = sum(1 for f in findings if f[1] == "ERROR")
+    if as_json:
+        print(json.dumps({"file": path, "setting": setting, "errors": errors,
+                          "warnings": len(findings) - errors,
+                          "findings": [dict(zip(("line", "level", "check", "term", "fix"), f))
+                                       for f in findings]}, ensure_ascii=False, indent=1))
+        return 1 if errors else 0
     for line, level, check, term, why in findings:
         print(f"{path}:{line}: {level} [{check}] {term} — {why}")
-    errors = sum(1 for f in findings if f[1] == "ERROR")
     warns = len(findings) - errors
     print(f"\n{errors} error(s), {warns} warning(s)." if findings else "\nClean.")
     if warns:
@@ -253,23 +271,36 @@ def scan(path: str, allow=(), setting: str = "dev") -> int:
     return 1 if errors else 0
 
 
-def show_term(word: str) -> int:
+def find_term(word: str):
     w = word.lower().strip()
     for e in load_terms():
-        names = [n.strip() for n in e["en"].split("/")]
+        names = [n.strip().lower() for n in e["en"].split("/")]
         if w in names or w in (e["dev"]["write"].lower(), e["official"]["write"].lower()):
-            print(f"{e['en']}  [{e['status']}]")
-            for s in SETTINGS:
-                print(f"  {s:<9}{e[s]['write']}  ({e[s]['group']})")
-            if e.get("avoid"):
-                print(f"  avoid    {', '.join(e['avoid'])}")
-            if e.get("note"):
-                print(f"  note     {e['note']}")
-            for ev in e.get("evidence") or []:
-                print(f"  - {ev.get('url') or ev.get('source', '')}: {ev.get('quote', '')}")
-            return 0
-    print(f"{word}: not in terms.json. Look it up (bolor.py {word}) and check real usage.")
-    return 1
+            return e
+    return None
+
+
+def show_term(words, as_json: bool = False) -> int:
+    found = {w: find_term(w) for w in words}
+    if as_json:
+        print(json.dumps(found, ensure_ascii=False, indent=1))
+        return 0 if all(found.values()) else 1
+    for word, e in found.items():
+        if not e:
+            print(f"{word}: not in terms.json. Look it up (bolor.py {word}), check real usage,"
+                  " and in a dev note keep the English term.\n")
+            continue
+        print(f"{e['en']}  [{e['status']}]")
+        for s in SETTINGS:
+            print(f"  {s:<9}{e[s]['write']}  ({e[s]['group']})")
+        if e.get("avoid"):
+            print(f"  avoid    {', '.join(e['avoid'])}")
+        if e.get("note"):
+            print(f"  note     {e['note']}")
+        for ev in e.get("evidence") or []:
+            print(f"  - {ev.get('url') or ev.get('source', '')}: {ev.get('quote', '')}")
+        print()
+    return 0 if all(found.values()) else 1
 
 
 def main() -> int:
@@ -277,15 +308,17 @@ def main() -> int:
     if not args:
         print(__doc__)
         return 2
+    as_json = "--json" in args
+    args = [a for a in args if a != "--json"]
     if args[0] == "--scan":
         allow = [a.split("=", 1)[1] for a in args[2:] if a.startswith("--allow=")]
         setting = next((a.split("=", 1)[1] for a in args[2:] if a.startswith("--setting=")), "dev")
         if setting not in SETTINGS:
             print(f"--setting must be one of {', '.join(SETTINGS)}")
             return 2
-        return scan(args[1], allow, setting)
+        return scan(args[1], allow, setting, as_json)
     if args[0] == "--term":
-        return show_term(" ".join(args[1:]))
+        return show_term(args[1:], as_json)
     direction = 1
     if args[0] in ("-d", "--direction"):
         direction, args = int(args[1]), args[2:]

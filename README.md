@@ -36,7 +36,7 @@ draft.md:2: WARN [evidential] унтарчээ — -жээ with no cited source 
 
 An ERROR fails the scan (exit 1): known calques, би/бид/манай outside quotes, colloquial -чих forms, Cyrillicized brand names (КьюПэй), and mixed number or percent formats in one document. A WARN is a heuristic to read, not to obey blindly. If a hit is right for your text, skip it with `--allow=хаалга`.
 
-`bolor.py <үг>` prints what a word actually means on bolor-toli.com. Please keep lookups at human pace; results are cached in `~/.cache/bolor-toli.json`. Without a network the lookup says so, and the scan still works.
+`bolor.py <үг>` prints what a word actually means on bolor-toli.com. Please keep lookups at human pace; results are cached in `~/.cache/bolor-toli/`. Without a network the lookup says so, and the scan still works.
 
 ## Translate a technical term or not?
 

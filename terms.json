@@ -24,6 +24,14 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Geopro үйлчилгээг нэвтрүүллээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "deploy -> ашиглах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "ашиглалтад нэвтрүүлэх: 24 of 15.1M sentences"
    }
   ]
  },
@@ -58,6 +66,22 @@
    {
     "url": "https://www.statebank.mn/",
     "quote": "ГЯЛСБАНК 3.0 ХУВИЛБАР НЭВТЭРЛЭЭ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "release -> гарц"
+   },
+   {
+    "source": "microsoft",
+    "quote": "release -> хувилбар"
+   },
+   {
+    "source": "microsoft",
+    "quote": "release -> суллах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "гаргах: 445332 of 15.1M sentences"
    }
   ]
  },
@@ -74,7 +98,16 @@
   "avoid": [],
   "status": "unsure",
   "note": "No bolor-toli entry and no real usage found. WORDS.md already says буцаах was a guess. Keep rollback in dev; official form unverified.",
-  "evidence": []
+  "evidence": [
+   {
+    "source": "microsoft",
+    "quote": "rollback -> ухралт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "өмнөх хувилбарт буцаах: 0 of 15.1M sentences"
+   }
+  ]
  },
  {
   "en": "build",
@@ -101,6 +134,22 @@
    {
     "source": "bolor-toli",
     "quote": "хөрвүүлэх -> compile (comp.)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "build -> хувилбар"
+   },
+   {
+    "source": "microsoft",
+    "quote": "build -> компиляц хийх"
+   },
+   {
+    "source": "microsoft",
+    "quote": "build -> хөрвүүлэх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хувилбар: 49461 of 15.1M sentences"
    }
   ]
  },
@@ -125,6 +174,10 @@
    {
     "source": "bolor-toli",
     "quote": "commit -> гэмт хэрэг үйлдэх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "өөрчлөлтийг хадгалах: 14 of 15.1M sentences"
    }
   ]
  },
@@ -153,6 +206,14 @@
    {
     "url": "https://gogo.mn/r/6884qy",
     "quote": "Бүх сувгийг нэгтгэсний давуу тал"
+   },
+   {
+    "source": "microsoft",
+    "quote": "merge -> нэгтгэх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нэгтгэх: 33569 of 15.1M sentences"
    }
   ]
  },
@@ -185,6 +246,10 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Мобикомын Теди салбараас"
+   },
+   {
+    "source": "microsoft",
+    "quote": "branch -> салбар"
    }
   ]
  },
@@ -235,6 +300,10 @@
    {
     "source": "bolor-toli",
     "quote": "staging -> жүжиг тавих"
+   },
+   {
+    "source": "cc-100",
+    "quote": "туршилтын орчин: 16 of 15.1M sentences"
    }
   ]
  },
@@ -265,6 +334,10 @@
    {
     "url": "https://gogo.mn/r/6884qy",
     "quote": "Газрын тос боловсруулах үйлдвэр ашиглалтад орсноор"
+   },
+   {
+    "source": "cc-100",
+    "quote": "ашиглалтын орчин: 117 of 15.1M sentences"
    }
   ]
  },
@@ -295,6 +368,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Үүлэн_тооцоолол",
     "quote": "томоохон сэрверүүдийн сүлжээнд"
+   },
+   {
+    "source": "microsoft",
+    "quote": "server -> сервер"
+   },
+   {
+    "source": "cc-100",
+    "quote": "сервер: 8200 of 15.1M sentences"
    }
   ]
  },
@@ -323,6 +404,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Мэдээллийн_сан",
     "quote": "Өгөгдлийн сан (Англи: Database)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "database -> өгөгдлийн сан"
+   },
+   {
+    "source": "cc-100",
+    "quote": "өгөгдлийн сан: 1597 of 15.1M sentences"
    }
   ]
  },
@@ -347,6 +436,18 @@
    {
     "source": "bolor-toli",
     "quote": "backup -> нөөцлөх (комп.)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "backup -> нөөц"
+   },
+   {
+    "source": "microsoft",
+    "quote": "backup -> нөөц файл"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нөөцлөлт: 1565 of 15.1M sentences"
    }
   ]
  },
@@ -375,6 +476,14 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Сим сэргээх"
+   },
+   {
+    "source": "microsoft",
+    "quote": "restore -> сэргээх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "сэргээх: 89709 of 15.1M sentences"
    }
   ]
  },
@@ -405,6 +514,18 @@
    {
     "source": "bolor-toli",
     "quote": "log -> бүртгэх"
+   },
+   {
+    "source": "microsoft",
+    "quote": "log -> бичлэг"
+   },
+   {
+    "source": "microsoft",
+    "quote": "log -> бичих"
+   },
+   {
+    "source": "cc-100",
+    "quote": "системийн лог: 8 of 15.1M sentences"
    }
   ]
  },
@@ -437,6 +558,10 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "кибер аюулгүй байдлын хоёр ноцтой алдааны улмаас"
+   },
+   {
+    "source": "cc-100",
+    "quote": "алдаа: 249540 of 15.1M sentences"
    }
   ]
  },
@@ -465,6 +590,10 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Төлөвлөгөөт засвар үйлчилгээний мэдэгдэл"
+   },
+   {
+    "source": "cc-100",
+    "quote": "засвар: 75986 of 15.1M sentences"
    }
   ]
  },
@@ -493,6 +622,14 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "mobiAI, Xplore функц нэвтэрлээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "feature -> онцлог"
+   },
+   {
+    "source": "cc-100",
+    "quote": "боломж: 2000220 of 15.1M sentences"
    }
   ]
  },
@@ -525,6 +662,30 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "апликейшнаа шинэчлээрэй"
+   },
+   {
+    "source": "microsoft",
+    "quote": "update -> шинэчлэх"
+   },
+   {
+    "source": "microsoft",
+    "quote": "update -> шинэчлэл"
+   },
+   {
+    "source": "microsoft",
+    "quote": "update -> шинэчлэлт хийх"
+   },
+   {
+    "source": "microsoft",
+    "quote": "update -> нийтийн сүлжээн дэх мэдээ (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "update -> мэдээ"
+   },
+   {
+    "source": "cc-100",
+    "quote": "шинэчлэл: 83919 of 15.1M sentences"
    }
   ]
  },
@@ -557,6 +718,14 @@
    {
     "url": "https://www.tdbm.mn/mn",
     "quote": "ХХБ-НЫ СИСТЕМИЙН ШИНЭЧЛЭЛ ДУУСЛАА"
+   },
+   {
+    "source": "microsoft",
+    "quote": "upgrade -> сайжруулах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "шинэчлэл: 83919 of 15.1M sentences"
    }
   ]
  },
@@ -585,6 +754,18 @@
    {
     "url": "https://www.unitel.mn/unitel/service/sim",
     "quote": "Худалдан авсан сим карт дээрээ дугаараа сэргээж, гар утсандаа суулгана"
+   },
+   {
+    "source": "microsoft",
+    "quote": "install -> суулгах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "install -> суурилуулах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "суулгах: 36647 of 15.1M sentences"
    }
   ]
  },
@@ -609,6 +790,18 @@
    {
     "source": "bolor-toli",
     "quote": "uninstall -> устгах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "uninstall -> устгах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "uninstall -> арилгах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "устгах: 50789 of 15.1M sentences"
    }
   ]
  },
@@ -637,6 +830,18 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Та Magic Voice апп татаад"
+   },
+   {
+    "source": "microsoft",
+    "quote": "download -> татаж авах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "download -> татан авалт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "татаж авах: 36459 of 15.1M sentences"
    }
   ]
  },
@@ -665,6 +870,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Нууц_үг",
     "quote": "Файл оруулах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "upload -> байршуулах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "байршуулах: 68603 of 15.1M sentences"
    }
   ]
  },
@@ -693,6 +906,10 @@
    {
     "url": "https://www.gogo.mn/",
     "quote": "https://gogo.mn/login Нэвтрэх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нэвтрэх: 122391 of 15.1M sentences"
    }
   ]
  },
@@ -717,6 +934,10 @@
    {
     "source": "bolor-toli",
     "quote": "logout -> холболтоос гарах"
+   },
+   {
+    "source": "cc-100",
+    "quote": "системээс гарах: 123 of 15.1M sentences"
    }
   ]
  },
@@ -747,6 +968,18 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Нууц_үг",
     "quote": "Нууц үг — Википедиа нэвтэрхий толь"
+   },
+   {
+    "source": "microsoft",
+    "quote": "password -> хандалтын код"
+   },
+   {
+    "source": "microsoft",
+    "quote": "password -> нууц үг"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нууц үг: 24832 of 15.1M sentences"
    }
   ]
  },
@@ -763,7 +996,16 @@
   "avoid": [],
   "status": "unsure",
   "note": "No bolor-toli entry; phrase composed from хэрэглэгч + нэр, not found in the corpus.",
-  "evidence": []
+  "evidence": [
+   {
+    "source": "microsoft",
+    "quote": "username -> хэрэглэгчийн нэр"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хэрэглэгчийн нэр: 6699 of 15.1M sentences"
+   }
+  ]
  },
  {
   "en": "user",
@@ -790,6 +1032,14 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "зарим хэрэглэгчид Википедиагийн тодорхой хэсгүүдэд хандах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "user -> хэрэглэгч"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хэрэглэгч: 274787 of 15.1M sentences"
    }
   ]
  },
@@ -810,14 +1060,30 @@
    {
     "source": "bolor-toli",
     "quote": "admin -> администратор (комп.)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "admin -> администратор"
+   },
+   {
+    "source": "microsoft",
+    "quote": "admin -> админ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "admin -> компьютерийн администратор (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "cc-100",
+    "quote": "администратор: 521 of 15.1M sentences"
    }
   ]
  },
  {
   "en": "account",
   "dev": {
-   "group": "native",
-   "write": "хэрэглэгчийн бүртгэл"
+   "group": "loan",
+   "write": "аккаунт"
   },
   "official": {
    "group": "native",
@@ -825,7 +1091,7 @@
   },
   "avoid": [],
   "status": "unsure",
-  "note": "данс is a money account. A login account is хэрэглэгчийн бүртгэл, always with хэрэглэгчийн so it never collides with a log.",
+  "note": "Dev/informal: аккаунт (656; акаунт 253), the Russian-route spelling. Official: хэрэглэгчийн бүртгэл (284; also Microsoft). данс is a money account.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -838,6 +1104,22 @@
    {
     "url": "https://www.statebank.mn/",
     "quote": "Харилцах данс"
+   },
+   {
+    "source": "microsoft",
+    "quote": "account -> хэрэглэгчийн бүртгэл"
+   },
+   {
+    "source": "microsoft",
+    "quote": "account -> skype хэрэглэгчийн бүртгэл (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "cc-100",
+    "quote": "аккаунт: 659 of 15.1M sentences"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хэрэглэгчийн бүртгэл: 393 of 15.1M sentences"
    }
   ]
  },
@@ -862,6 +1144,22 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "удирдлагын самбарууд"
+   },
+   {
+    "source": "microsoft",
+    "quote": "dashboard -> мэдээллийн самбар"
+   },
+   {
+    "source": "microsoft",
+    "quote": "dashboard -> windows дэлгүүрийн мэдээллийн самбар (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "dashboard -> хянах самбар"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нэгдсэн хяналтын дэлгэц: 2 of 15.1M sentences"
    }
   ]
  },
@@ -890,6 +1188,14 @@
    {
     "url": "https://www.statebank.mn/",
     "quote": "Хүртээмжийн тохиргоо"
+   },
+   {
+    "source": "microsoft",
+    "quote": "settings -> тохиргоо"
+   },
+   {
+    "source": "cc-100",
+    "quote": "тохиргоо: 6118 of 15.1M sentences"
    }
   ]
  },
@@ -918,6 +1224,18 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Нэмэлт үйлчилгээний шинэчлэл, үнийн өөрчлөлтийн тухай мэдэгдэл"
+   },
+   {
+    "source": "microsoft",
+    "quote": "notification -> мэдэгдэл"
+   },
+   {
+    "source": "microsoft",
+    "quote": "notification -> сануулга"
+   },
+   {
+    "source": "cc-100",
+    "quote": "мэдэгдэл: 106372 of 15.1M sentences"
    }
   ]
  },
@@ -950,6 +1268,22 @@
    {
     "url": "https://www.tdbm.mn/mn/retail/online-banking/TDB-online",
     "quote": "ТиДиБи онлайн апп хувилбарын нэгдсэн гарын авлагатай"
+   },
+   {
+    "source": "microsoft",
+    "quote": "app/application -> програм"
+   },
+   {
+    "source": "microsoft",
+    "quote": "app/application -> програм"
+   },
+   {
+    "source": "cc-100",
+    "quote": "апп: 21391 of 15.1M sentences"
+   },
+   {
+    "source": "cc-100",
+    "quote": "аппликэйшн: 1908 of 15.1M sentences"
    }
   ]
  },
@@ -978,6 +1312,18 @@
    {
     "url": "https://help.unitel.mn/unitel",
     "quote": "Unitel вэбсайтаар авах үйлчилгээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "website -> сайт"
+   },
+   {
+    "source": "microsoft",
+    "quote": "website -> вэб сайт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "вэб сайт: 31329 of 15.1M sentences"
    }
   ]
  },
@@ -988,12 +1334,12 @@
    "write": "браузер"
   },
   "official": {
-   "group": "loan",
-   "write": "браузер"
+   "group": "native",
+   "write": "вэб хөтөч"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Dictionary has хөтөч (comp.) and браузер; Wikipedia writes броузер. хөтөч also means guide (gogo nav, 'хувийн хөтөч'). Spelling not settled in real usage.",
+  "note": "интернэт/вэб хөтөч is common (хөтөч 1,401 tech sentences vs браузер 440); Microsoft uses вэб хөтөч. Bare хөтөч also means a guide, so keep вэб.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1006,6 +1352,18 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Үүлэн_тооцоолол",
     "quote": "вэб броузер"
+   },
+   {
+    "source": "microsoft",
+    "quote": "browser -> вэб хөтөч"
+   },
+   {
+    "source": "cc-100",
+    "quote": "браузер: 639 of 15.1M sentences"
+   },
+   {
+    "source": "cc-100",
+    "quote": "вэб хөтөч: 427 of 15.1M sentences"
    }
   ]
  },
@@ -1034,6 +1392,34 @@
    {
     "url": "https://www.tdbm.mn/mn/help-center",
     "quote": "линкээр хандан авах боломжтой"
+   },
+   {
+    "source": "microsoft",
+    "quote": "link -> холбоос"
+   },
+   {
+    "source": "microsoft",
+    "quote": "link -> ole/dde холболт (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "link -> холболт"
+   },
+   {
+    "source": "microsoft",
+    "quote": "link -> холбох"
+   },
+   {
+    "source": "microsoft",
+    "quote": "link -> вэб холбоос"
+   },
+   {
+    "source": "cc-100",
+    "quote": "линк: 20256 of 15.1M sentences"
+   },
+   {
+    "source": "cc-100",
+    "quote": "холбоос: 832026 of 15.1M sentences"
    }
   ]
  },
@@ -1062,6 +1448,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Үүлэн_тооцоолол",
     "quote": "Өөрийн файлаа санамсаргүй устгаад"
+   },
+   {
+    "source": "microsoft",
+    "quote": "file -> файл"
+   },
+   {
+    "source": "cc-100",
+    "quote": "файл: 13204 of 15.1M sentences"
    }
   ]
  },
@@ -1082,6 +1476,14 @@
    {
     "source": "bolor-toli",
     "quote": "folder -> хавтас (комп.)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "folder -> хавтас"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хавтас: 22030 of 15.1M sentences"
    }
   ]
  },
@@ -1118,6 +1520,18 @@
    {
     "url": "https://gogo.mn/r/6884qy",
     "quote": "үүлэн технологид суурилсан үйлчилгээг анх нэвтрүүлсэн юм"
+   },
+   {
+    "source": "microsoft",
+    "quote": "cloud -> үүл"
+   },
+   {
+    "source": "microsoft",
+    "quote": "cloud -> интернет"
+   },
+   {
+    "source": "cc-100",
+    "quote": "үүлэн технологи: 284 of 15.1M sentences"
    }
   ]
  },
@@ -1146,6 +1560,22 @@
    {
     "url": "https://www.mobicom.mn/",
     "quote": "Мобиком хамгийн хурдан 5G сүлжээг нэвтрүүллээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "network -> нийтийн сүлжээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "network -> олон нийтийн сүлжээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "network -> сүлжээ"
+   },
+   {
+    "source": "cc-100",
+    "quote": "сүлжээ: 88419 of 15.1M sentences"
    }
   ]
  },
@@ -1170,6 +1600,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Үүлэн_тооцоолол",
     "quote": "интернэт холболт л байхад"
+   },
+   {
+    "source": "microsoft",
+    "quote": "connection -> холболт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "холболт: 832026 of 15.1M sentences"
    }
   ]
  },
@@ -1190,6 +1628,10 @@
    {
     "source": "bolor-toli",
     "quote": "timeout -> хугацаа хэтрэлт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хугацаа хэтрэх: 728 of 15.1M sentences"
    }
   ]
  },
@@ -1218,6 +1660,14 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "хоёр ноцтой алдааны улмаас"
+   },
+   {
+    "source": "microsoft",
+    "quote": "error -> алдаа"
+   },
+   {
+    "source": "cc-100",
+    "quote": "алдаа: 249540 of 15.1M sentences"
    }
   ]
  },
@@ -1229,13 +1679,13 @@
   },
   "official": {
    "group": "native",
-   "write": "ажиллахаа зогсох"
+   "write": "гацах"
   },
   "avoid": [
    "аваар осол"
   ],
   "status": "unsure",
-  "note": "эвдрэх reads as physical breakage; dropped. A crash is ажиллахаа зогссон. A hang or freeze is гацах (bolor-toli: become jammed, stick). An outage is саатал.",
+  "note": "People write гацах/гацсан for an app that crashed or froze (250 tech sentences vs 5 for ажиллахаа зогсох). эвдрэх reads as physical breakage.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1252,6 +1702,10 @@
    {
     "source": "bolor-toli",
     "quote": "гацах -> become jammed, stick"
+   },
+   {
+    "source": "cc-100",
+    "quote": "гацах: 12831 of 15.1M sentences"
    }
   ]
  },
@@ -1267,7 +1721,7 @@
   },
   "avoid": [],
   "status": "unsure",
-  "note": "Dictionary дахин ачаалах (comp.). Avoid дахин асаах (= power on, WORDS.md 2b). No real usage found.",
+  "note": "дахин ачаалах (79 tech sentences) and дахин эхлүүлэх (71; Microsoft's restart) are both correct. дахин асаах is rare (7) though Android uses it.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1276,6 +1730,14 @@
    {
     "source": "bolor-toli",
     "quote": "restart -> дахин ачаалах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "reboot/restart -> дахин эхлүүлэх"
+   },
+   {
+    "source": "cc-100",
+    "quote": "дахин ачаалах: 254 of 15.1M sentences"
    }
   ]
  },
@@ -1300,6 +1762,22 @@
    {
     "source": "bolor-toli",
     "quote": "cache -> нууц агуулах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "cache -> завсрын санах ой"
+   },
+   {
+    "source": "microsoft",
+    "quote": "cache -> кэш"
+   },
+   {
+    "source": "microsoft",
+    "quote": "cache -> завсрын санах ойд хадгалах (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "cc-100",
+    "quote": "кэш: 179 of 15.1M sentences"
    }
   ]
  },
@@ -1316,7 +1794,16 @@
   "avoid": [],
   "status": "unsure",
   "note": "bolor-toli lookup fails for API; no Cyrillic form found. Acronyms stay Latin.",
-  "evidence": []
+  "evidence": [
+   {
+    "source": "microsoft",
+    "quote": "API -> api (dropped: 0 CC-100 sentences)"
+   },
+   {
+    "source": "microsoft",
+    "quote": "API -> програмчлалын интерфейс"
+   }
+  ]
  },
  {
   "en": "token",
@@ -1343,6 +1830,14 @@
    {
     "url": "https://unread.today/c/insight-how-to-save-your-ai-token",
     "quote": "Харин текстийг токен гэх жижиг нэгжүүдэд хуваан боловсруулдаг"
+   },
+   {
+    "source": "microsoft",
+    "quote": "token -> токен"
+   },
+   {
+    "source": "cc-100",
+    "quote": "токен: 12359 of 15.1M sentences"
    }
   ]
  },
@@ -1357,8 +1852,8 @@
    "write": "нэвтрэлт"
   },
   "avoid": [],
-  "status": "unsure",
-  "note": "суулт means a sitting; dropped. Login session: нэвтрэлт (нэвтрэлтийн хугацаа дууссан). сесс is not in bolor-toli. No usage seen; reviewer's call.",
+  "status": "confirmed",
+  "note": "Login session: нэвтрэлт (142 tech sentences vs сесс 21, сеанс 14).",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1367,6 +1862,14 @@
    {
     "source": "bolor-toli",
     "quote": "session -> шүүх хурал"
+   },
+   {
+    "source": "microsoft",
+    "quote": "session -> логик холболт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "нэвтрэлт: 39012 of 15.1M sentences"
    }
   ]
  },
@@ -1395,6 +1898,22 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "хандах боломжгүй болжээ"
+   },
+   {
+    "source": "microsoft",
+    "quote": "access/permission -> хандалт"
+   },
+   {
+    "source": "microsoft",
+    "quote": "access/permission -> хандах"
+   },
+   {
+    "source": "microsoft",
+    "quote": "access/permission -> зөвшөөрөл"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хандалт: 79931 of 15.1M sentences"
    }
   ]
  },
@@ -1427,6 +1946,10 @@
    {
     "source": "bolor-toli",
     "quote": "эрх -> right, privilege"
+   },
+   {
+    "source": "cc-100",
+    "quote": "эрхийн түвшин: 25 of 15.1M sentences"
    }
   ]
  },
@@ -1455,6 +1978,14 @@
    {
     "url": "https://www.tdbm.mn/mn/retail/online-banking/TDB-online",
     "quote": "Өндөр нууцлал бүхий хамгаалалт"
+   },
+   {
+    "source": "microsoft",
+    "quote": "encryption -> шифрлэлт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "шифрлэлт: 866 of 15.1M sentences"
    }
   ]
  },
@@ -1470,7 +2001,7 @@
   },
   "avoid": [],
   "status": "confirmed",
-  "note": "Only one real source (Wikipedia title) plus the dictionary.",
+  "note": "галт хана 140 sentences; Microsoft's хамгаалалттай гарц has 0, so it is dated.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1479,6 +2010,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Галт_хана",
     "quote": "Галт хана — Википедиа нэвтэрхий толь"
+   },
+   {
+    "source": "microsoft",
+    "quote": "firewall -> хамгаалалттай гарц"
+   },
+   {
+    "source": "cc-100",
+    "quote": "галт хана: 246 of 15.1M sentences"
    }
   ]
  },
@@ -1505,6 +2044,14 @@
    {
     "source": "bolor-toli",
     "quote": "port -> усан боомт"
+   },
+   {
+    "source": "microsoft",
+    "quote": "port -> порт"
+   },
+   {
+    "source": "cc-100",
+    "quote": "порт: 121582 of 15.1M sentences"
    }
   ]
  },
@@ -1537,6 +2084,14 @@
    {
     "url": "https://mn.wikipedia.org/wiki/Нууц_үг",
     "quote": "Гар утасны хувилбар"
+   },
+   {
+    "source": "microsoft",
+    "quote": "version -> хувилбар"
+   },
+   {
+    "source": "cc-100",
+    "quote": "хувилбар: 49461 of 15.1M sentences"
    }
   ]
  },
@@ -1565,6 +2120,14 @@
    {
     "url": "https://unread.today/c/insight-how-to-save-your-ai-token",
     "quote": "туршилт хийсэн хөгжүүлэгч"
+   },
+   {
+    "source": "cc-100",
+    "quote": "тест: 7812 of 15.1M sentences"
+   },
+   {
+    "source": "cc-100",
+    "quote": "туршилт: 51476 of 15.1M sentences"
    }
   ]
  },
@@ -1597,6 +2160,10 @@
    {
     "url": "https://ikon.mn/n/3r74",
     "quote": "дэлхий даяар вэб сайтуудын ажиллагаа тасалдав"
+   },
+   {
+    "source": "cc-100",
+    "quote": "үйлчилгээний тасалдал: 13 of 15.1M sentences"
    }
   ]
  },
@@ -1608,11 +2175,11 @@
   },
   "official": {
    "group": "native",
-   "write": "саатал"
+   "write": "системийн доголдол"
   },
   "avoid": [],
   "status": "unsure",
-  "note": "тохиолдол means an occurrence or case; dropped. A service incident is саатал (bolor-toli tech.: failure). A security incident is аюулгүй байдлын зөрчил (зөрчил = breach).",
+  "note": "A system failure is системийн доголдол (доголдол 398 tech sentences); an outage of a service is саатал (280). A security incident is аюулгүй байдлын зөрчил.",
   "evidence": [
    {
     "source": "bolor-toli",
@@ -1629,6 +2196,14 @@
    {
     "source": "bolor-toli",
     "quote": "зөрчил -> violation, breach"
+   },
+   {
+    "source": "microsoft",
+    "quote": "incident -> тохиолдол"
+   },
+   {
+    "source": "cc-100",
+    "quote": "системийн доголдол: 39 of 15.1M sentences"
    }
   ]
  }

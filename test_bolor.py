@@ -104,6 +104,32 @@ class TermTest(unittest.TestCase):
                     self.assertTrue(e["evidence"], "confirmed needs evidence")
 
 
+class CliTest(unittest.TestCase):
+    def run_cli(self, *args):
+        import subprocess, sys, os
+        here = os.path.dirname(os.path.abspath(__file__))
+        return subprocess.run([sys.executable, os.path.join(here, "bolor.py"), *args],
+                              capture_output=True, text=True, cwd="/")
+
+    def test_scan_json_reports_errors_and_exit_code(self):
+        import json, tempfile
+        with tempfile.NamedTemporaryFile("w", suffix=".md", delete=False, encoding="utf-8") as f:
+            f.write("Бид засварыг үйлдвэрлэлийн орчинд гаргасан.\n")
+        r = self.run_cli("--scan", f.name, "--json")
+        out = json.loads(r.stdout)
+        self.assertEqual(r.returncode, 1)
+        self.assertGreaterEqual(out["errors"], 2)
+        self.assertIn("first-person", [x["check"] for x in out["findings"]])
+
+    def test_term_json_takes_several_words(self):
+        import json
+        r = self.run_cli("--term", "server", "nosuchterm", "--json")
+        out = json.loads(r.stdout)
+        self.assertEqual(out["server"]["dev"]["write"], "сервер")
+        self.assertIsNone(out["nosuchterm"])
+        self.assertEqual(r.returncode, 1)
+
+
 class ScanTest(unittest.TestCase):
     def test_each_bad_line_trips_its_check(self):
         for check, line in BAD:

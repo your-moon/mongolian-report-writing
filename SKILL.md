@@ -7,6 +7,25 @@ description: Write or review formal Mongolian (Cyrillic/Khalkha) reports, incide
 
 Grounded in Mongolia's actual document standard (MNS 5140) and 90+ real government, corporate, and news sources — not generic textbook Mongolian. Report register is deliberately different from news-story register; don't reach for журналист voice by default.
 
+## Quick use
+
+Three commands. Run them in this order on every Mongolian draft:
+
+```sh
+python3 ~/.claude/skills/mongolian-report-writing/bolor.py --term deploy session crash         # 1. before writing: how to render each technical term
+python3 ~/.claude/skills/mongolian-report-writing/bolor.py --scan draft.md --setting=dev       # 2. after writing: must exit 0 (official: --setting=official)
+python3 ~/.claude/skills/mongolian-report-writing/bolor.py үйлдвэрлэл                          # 3. any word you are unsure of: what it really means
+```
+
+- Add `--json` to `--term` or `--scan` for machine-readable output.
+- Exit codes: `--scan` 0 = clean, 1 = errors. `--term` 1 = a term is not listed. The lookup
+  prints "lookup unavailable" when offline (exit 3); the scan still works.
+- `--setting=dev` is a ticket, PR or chat; `--setting=official` is a letter or report to a
+  government body, bank or customer.
+- A term not in the list: keep it in English in a dev note, and look it up before translating
+  it in an official document.
+- Show the finished Mongolian to the user before posting it anywhere.
+
 ## The seven defaults
 
 1. **Verb endings carry evidentiality — pick on purpose.**
